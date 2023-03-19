@@ -1,3 +1,9 @@
+:root {
+  --cl-white: #fff;
+  --black2: #121212;
+  --black4: #1d1d1d;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cl-white {
+  color: var(--cl-white) !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+.fw-400 {
+  font-weight: 400;
+}
+
+.f-sansserif {
+  font-family: sans-serif !important;
+}
+
+.h-22 {
+  height: 22px;
 }
