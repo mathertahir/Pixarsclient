@@ -7,12 +7,14 @@ import TopNav from "./components/TopNav/TopNav";
 
 import "./App.css";
 import DesignBanner from "./components/DesignBanner/DesignBanner";
+import SwiperSlider from "./components/Swiper/SwiperSlider";
 
 const App = () => {
   return (
     <div>
       <TopNav />
       <DesignBanner />
+      <SwiperSlider />
     </div>
   );
 };
