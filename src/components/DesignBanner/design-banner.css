@@ -1,0 +1,20 @@
+.design-banner-main {
+  background: var(--black);
+}
+
+.hero-top-links a {
+  max-width: 300px;
+  font-size: 20px;
+  line-height: 1.5px;
+  padding-bottom: 15px;
+  /* border-bottom: 1px solid var(--cl-white); */
+  transition: all 0.3s;
+  /* overflow: hidden; */
+  text-decoration: none;
+}
+.link-data {
+  width: 300px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid var(--cl-white);
+}

@@ -6,11 +6,13 @@ import "./App.css";
 import TopNav from "./components/TopNav/TopNav";
 
 import "./App.css";
+import DesignBanner from "./components/DesignBanner/DesignBanner";
 
 const App = () => {
   return (
     <div>
       <TopNav />
+      <DesignBanner />
     </div>
   );
 };
