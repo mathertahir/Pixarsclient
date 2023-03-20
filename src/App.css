@@ -3,6 +3,7 @@
   --black2: #121212;
   --black4: #1d1d1d;
   --black: #000;
+  --gray3:#a8a8a8;
 }
 
 .App {
@@ -58,6 +59,9 @@
 .fw-400 {
   font-weight: 400;
 }
+.fw-500{
+  font-weight: 500 !important;
+}
 
 .f-sansserif {
   font-family: sans-serif !important;
@@ -65,4 +69,19 @@
 
 .h-22 {
   height: 22px;
+}
+
+.fs-110{
+  font-size: clamp(3.75rem, -0.1563rem + 12.5vw, 6.875rem);
+}
+
+@font-face {
+  font-family: "kanit";
+  src: url(../public/kanitfont/Kanit-Regular.ttf);
+}
+.f-kanit{
+  font-family: "kanit";
+}
+.fs-50{
+  font-size: 50px;
 }
