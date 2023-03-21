@@ -200,6 +200,105 @@ const SolutionSection = () => {
             </Col>
           </Row>
         </Container>
+
+        <div className="brands-section  pt-140 pb-130">
+          <Container className="line1">
+            <Row className="mx-0">
+              <Col sm={12}>
+                <div className="brands-title-wrapper  pb-60">
+                  <h2 className="fs-18 fw-400 cl-white f-kanit">
+                    Internation Brands
+                  </h2>
+
+                  <div className="brands-title">
+                    <div className="fs-60 f-kanit fw-500 cl-white">
+                      We are happy to work with global{" "}
+                    </div>
+                    <div className="fs-60 f-kanit fw-500 cl-white">
+                      {" "}
+                      largest brands{" "}
+                    </div>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={12}>
+                <div className="brands-list-section">
+                  <div className="brands-item">
+                    <img src="images/9to5.png"></img>
+                  </div>
+
+                  <div className="brands-item">
+                    <img src="images/9to5-google.png"></img>
+                  </div>
+
+                  <div className="brands-item">
+                    <img src="images/Drive-Points.png"></img>
+                  </div>
+                  <div className="brands-item">
+                    <img src="images/Legends-Galaxy.png"></img>
+                  </div>
+                  <div className="brands-item">
+                    <img src="images/Walt-Disney.png"></img>
+                  </div>
+                  <div className="brands-item">
+                    <img src="images/BBC-1.png"></img>
+                  </div>
+                  <div className="brands-item">
+                    <img src="images/Star-Wars-1.png"></img>
+                  </div>
+                  <div className="brands-item">
+                    <img src="images/Hyprov.png"></img>
+                  </div>
+                  <div className="brands-item">
+                    <img src="images/Margot.png"></img>
+                  </div>
+                  <div className="brands-item">
+                    <img src="images/World.png"></img>
+                  </div>
+                  <div className="brands-item">
+                    <img src="images/Art.png"></img>
+                  </div>
+                  <div className="brands-item">
+                    <img src="images/stanford.png"></img>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
+
+      <div className="cta-main ">
+        <Container>
+          <Row>
+            <Col sm={12}>
+              <div className="cta-content  text-center">
+                <p className="content-subtitle cl-white f-kanit">
+                  Work With US
+                </p>
+
+                <div className="cta-title">
+                  <div className="cl-white fs-50 f-kanit fw-500">
+                    We would love to hear more{" "}
+                  </div>
+                  <div className="cl-white fs-50 f-kanit fw-500">
+                    about your project
+                  </div>
+                </div>
+
+                <div className="btn-cta  pt-3 ">
+                  <a className="cl-white  btn-secondary">
+                    Contact us
+                    <BsArrowUpRight className="cl-white  arrow-sign" />
+                  </a>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </div>
   );
