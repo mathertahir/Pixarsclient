@@ -8,6 +8,7 @@ import TopNav from "./components/TopNav/TopNav";
 import "./App.css";
 import DesignBanner from "./components/DesignBanner/DesignBanner";
 import SwiperSlider from "./components/Swiper/SwiperSlider";
+import SolutionSection from "./components/SolutionSection/SolutionSection";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <TopNav />
       <DesignBanner />
       <SwiperSlider />
+      <SolutionSection />
     </div>
   );
 };
