@@ -107,15 +107,7 @@
 
 }
 
-.line1::before{
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: var(--white4)
-}
+
 
 .content-subtitle{
     font-weight: 400;

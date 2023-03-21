@@ -1,0 +1,8 @@
+.footer-top{
+    background-image: url(../../../public/images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.footer-pic{
+    object-fit: contain;
+}
