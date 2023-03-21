@@ -3,10 +3,10 @@
   --black2: #121212;
   --black4: #1d1d1d;
   --black: #000;
-  --gray3:#a8a8a8;
-  --secondary:#2c2c2c;
-  --primary:#c9f31d;
-  --gray2:#999;
+  --gray3: #a8a8a8;
+  --secondary: #2c2c2c;
+  --primary: #c9f31d;
+  --gray2: #999;
 }
 
 .App {
@@ -59,13 +59,13 @@
 .fs-18 {
   font-size: 18px !important;
 }
-.fs-26{
+.fs-26 {
   font-size: 26px;
 }
 .fw-400 {
   font-weight: 400;
 }
-.fw-500{
+.fw-500 {
   font-weight: 500 !important;
 }
 
@@ -77,7 +77,7 @@
   height: 22px;
 }
 
-.fs-110{
+.fs-110 {
   font-size: clamp(3.75rem, -0.1563rem + 12.5vw, 6.875rem);
 }
 
@@ -85,31 +85,30 @@
   font-family: "kanit";
   src: url(../public/kanitfont/Kanit-Regular.ttf);
 }
-.f-kanit{
+.f-kanit {
   font-family: "kanit";
 }
-.fs-50{
+.fs-50 {
   font-size: 50px;
 }
 
-.t-uppercase{
-
+.t-uppercase {
 }
 
-.pt-140{
+.pt-140 {
   padding-top: 140px;
 }
-.pb-130{
+.pb-130 {
   padding-bottom: 130px;
 }
 
-.fs-60{
-  font-size: clamp(2rem, -0.1875rem + 7vw, 3.75rem);
+.fs-60 {
+  font-size: clamp(2rem, -0.1875rem + 7vw, 3.125rem);
 }
-.cl-gray2{
-  color:var(--gray2);
+.cl-gray2 {
+  color: var(--gray2);
 }
 
-.p-40{
-padding: 40px;
+.p-40 {
+  padding: 40px;
 }

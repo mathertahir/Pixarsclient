@@ -1,9 +1,6 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 
 import "./swiperstyle.css";
 import { Container } from "react-bootstrap";
@@ -88,19 +85,19 @@ const SwiperSlider = () => {
                   {" "}
                   <div className="cl-white fs-60 f-kanit fw-500">
                     {" "}
-                    We are geared towards
+                    We are geared towards versatility
                   </div>
                   <div className="cl-white fs-60 f-kanit fw-500">
                     {" "}
-                    versatility and offering you
+                    and offering you efficiency and
                   </div>
                   <div className="cl-white fs-60 f-kanit fw-500">
                     {" "}
-                    efficiency and best quality
+                    best quality services at every
                   </div>
                   <div className="cl-white fs-60 f-kanit fw-500">
                     {" "}
-                    services area at every step.
+                    step.
                   </div>{" "}
                 </div>
               </div>
@@ -205,16 +202,16 @@ const SwiperSlider = () => {
             </div>
           </div> */}
 
-          <Row className="align-items-center  gx-5">
+          <Row className="align-items-center  gx-5 mx-0">
             <Col lg={4} className="">
               <div className="about-left-img  ">
                 <img src="images/about-left.png  " className="w-100"></img>
               </div>
             </Col>
             <Col lg={8} className="p-40">
-              <Row className="flex-md-column-reverse">
-                <Col lg={8}>
-                  <div className="about-description p-40  ">
+              <Row className="mx-0">
+                <Col lg={9}>
+                  <div className="about-description p-30  ">
                     <p>
                       <div className="fs-18 cl-gray2 fw-400 f-kanit">
                         At Pixarsart our aim is to create the most effective{" "}
@@ -248,13 +245,8 @@ const SwiperSlider = () => {
                       </div>
                     </p>
                   </div>
-
-                  <div className="shape">
-                    <div className="primary"></div>
-                    <div className="secondary"></div>
-                  </div>
                 </Col>
-                <Col lg={4} className="p-40  position-relative">
+                <Col lg={3} className="p-40  position-relative">
                   <div>
                     <div className="about-right-img">
                       <img src="images/about-right.png"></img>
