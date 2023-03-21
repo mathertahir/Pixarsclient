@@ -137,6 +137,70 @@ const SolutionSection = () => {
           </Col>
         </Row>
       </Container>
+
+      <div className="about-2-main  pt-130 pb-110">
+        <Container>
+          <Row className="mx-0  pb-3">
+            <Col sm={12}>
+              <div>
+                <h2 className="cl-white fs-60 f-kanit">Who we are? </h2>
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="mx-0 ">
+            <Col sm={8} className="justify-content-center">
+              <div className="d-flex justify-content-start   justify-content-sm-end">
+                <p className="cl-gray2 fs-18 fw-400 f-kanit">
+                  <div>
+                    We value you and your brand. Analysis of your goals is{" "}
+                  </div>
+                  <div>
+                    a primary step in our work process. We want to get to{" "}
+                  </div>
+                  <div>know you and your business goals and then </div>
+                  <div>
+                    collaborate together to turn your ideas into reality.Our{" "}
+                  </div>
+                  <div>&nbsp;</div>
+
+                  <div>
+                    goal is to give your products the futuristic and present{" "}
+                  </div>
+                  <div>
+                    edge to lead the way through. We partner with you in{" "}
+                  </div>
+                  <div>
+                    idea generation and build the path towards success for{" "}
+                  </div>
+                  <div>
+                    you and us. Our workYou get to work with some of the{" "}
+                  </div>
+                  <div>&nbsp;</div>
+                  <div>most talented web developers, designers, creative </div>
+                  <div>
+                    thinkers and innovators in our team. Website designing{" "}
+                  </div>
+                  <div>and development catered just for you. </div>
+
+                  <div>&nbsp;</div>
+                </p>
+              </div>
+            </Col>
+            <Col
+              sm={4}
+              className="d-flex justify-content-start  justify-content-sm-end"
+            >
+              <div>
+                <a className="cl-white  btn-secondary">
+                  Contact us
+                  <BsArrowUpRight className="cl-white  arrow-sign" />
+                </a>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };

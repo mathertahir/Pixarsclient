@@ -80,6 +80,13 @@
     transform: rotate(-26deg) translate(120px,-100%);
 }
 
+.about-2-main{
+    background-image: url(../../../public/images/about2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 190px;
+
+}
 
 @media only screen and  (max-width: 767px)  {
 
@@ -105,3 +112,15 @@
         }
         
         }
+
+        @media only screen and  (max-width: 768px)  {
+
+
+
+            .about-2-main{
+        
+            background-image: none;
+        
+            }
+            
+            }
