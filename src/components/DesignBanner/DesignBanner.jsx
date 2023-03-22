@@ -25,7 +25,10 @@ const DesignBanner = () => {
 
                 <div className="title-wrapper">
                   <h1 className="cl-white f-500 f-sanserif  title-heading fs-110 position-relative">
-                    We create Unique & digital experiences globally
+                    <span className="cright">We</span>{" "}
+                    <span className="cright">create </span>
+                    <span className="cright">create Unique & digital</span>
+                    <span className="cright"> experiences globally</span>
                   </h1>
                   <div className="position-relative">
                     <p className="title-subheading cl-white">
@@ -38,7 +41,7 @@ const DesignBanner = () => {
                   <div>
                     <img src="images/arrow-down.png"></img>
                   </div>
-                  <div>
+                  <div className="price">
                     <div className="fs-50 fw-400 cl-white f-kanit">25k+</div>
                     <p className="fs-18 fw-400 f-kanit cl-white">
                       Projects completed <br /> successfully

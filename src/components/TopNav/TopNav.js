@@ -31,7 +31,7 @@ const TopNav = () => {
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse>
             <Nav className="ms-auto">
               <Nav.Link
                 href="#home"

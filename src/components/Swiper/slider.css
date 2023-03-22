@@ -1,0 +1,105 @@
+.Marquee {
+  width: 100vw;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Marquee-content {
+  display: flex;
+  animation: marquee 3s linear infinite running;
+}
+
+.Marquee-tag {
+  width: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 10s ease;
+}
+
+.Marquee-right {
+  width: 100vw;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Marquee-right-content {
+  display: flex;
+  animation: marqueeright 4s linear infinite running;
+}
+
+.Marquee-right-tag {
+  width: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 10s ease;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+
+@keyframes marqueeright {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(50%);
+  }
+}
+
+.about-desc-data {
+  animation: fadeInUp 1s ease-in-out 5s forwards;
+}
+
+.first {
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+}
+.second {
+  animation: fadeInUp 2s ease-in-out 0s forwards;
+}
+.third {
+  animation: fadeInUp 3s ease-in-out 0s forwards;
+}
+.fourth {
+  animation: fadeInUp 4s ease-in-out 0s forwards;
+}
+.fifth {
+  animation: fadeInUp 3s ease-in-out 0s forwards;
+}
+.sixth {
+  animation: fadeInUp 2s ease-in-out 0s forwards;
+}
+
+.seventh {
+  animation: fadeInUp 2s ease-in-out 0s forwards;
+}
+
+.eighth {
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+}
+
+.ninth {
+  animation: fadeInUp 3s ease-in-out 0s forwards;
+}
+.tenth {
+  animation: fadeInUp 2s ease-in-out 0s forwards;
+}
+
+.eleventh {
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+}
