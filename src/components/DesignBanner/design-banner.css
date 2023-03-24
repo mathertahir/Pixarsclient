@@ -41,15 +41,22 @@
 }
 
 .title-wrapper {
-  max-width: 990px;
   margin-bottom: 110px;
   margin-top: 55px;
+}
+
+.loading-text {
+  max-width: 687px;
+  line-height: 0.9;
 }
 .title-heading {
   font-family: "kanit";
 }
+.mr-20 {
+  margin-right: 20px;
+}
 
-.title-heading::after {
+.loading-text::after {
   position: absolute;
   content: "Pro";
   width: 70px;
@@ -101,46 +108,193 @@
   animation: fadeInRight 3s ease-in-out 0s forwards;
 }
 
-/* 
-@media only screen and (min-width: 1200px) and (min-width: 1399px)  {
-.title-heading::after{
-  right: -30px;
-  top: 30px;
+.char {
+  display: inline-block;
+  color: aliceblue;
+  animation: loading-text 1s ease-in-out;
 }
 
-} */
+.char:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.char:nth-child(2) {
+  animation-delay: 0.7s;
+}
+.char:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.char:nth-child(4) {
+  animation-delay: 1s;
+}
+.char:nth-child(5) {
+  animation-delay: 1.2s;
+}
+.char:nth-child(6) {
+  animation-delay: 1.4s;
+}
+.char:nth-child(7) {
+  animation-delay: 1.6s;
+}
+.char:nth-child(8) {
+  animation-delay: 1.8s;
+}
+.char:nth-child(9) {
+  animation-delay: 2s;
+}
+.char:nth-child(10) {
+  animation-delay: 2.2s;
+}
+.char:nth-child(11) {
+  animation-delay: 2.3s;
+}
+.char:nth-child(12) {
+  animation-delay: 2.4s;
+}
+.char:nth-child(13) {
+  animation-delay: 2.6s;
+}
+.char:nth-child(14) {
+  animation-delay: 2.8s;
+}
+.char:nth-child(15) {
+  animation-delay: 3s;
+}
+.char:nth-child(16) {
+  animation-delay: 3.2s;
+}
+.char:nth-child(17) {
+  animation-delay: 3.4s;
+}
+.char:nth-child(18) {
+  animation-delay: 3.6s;
+}
+.char:nth-child(19) {
+  animation-delay: 3.8s;
+}
+.char:nth-child(20) {
+  animation-delay: 4s;
+}
+.char:nth-child(21) {
+  animation-delay: 4.2s;
+}
+.char:nth-child(22) {
+  animation-delay: 3.2s;
+}
+.char:nth-child(23) {
+  animation-delay: 3.4s;
+}
+.char:nth-child(24) {
+  animation-delay: 3.6s;
+}
+.char:nth-child(25) {
+  animation-delay: 3.8s;
+}
+.char:nth-child(25) {
+  animation-delay: 4s;
+}
+.char:nth-child(26) {
+  animation-delay: 4.2s;
+}
+.char:nth-child(27) {
+  animation-delay: 4.4s;
+}
 
-/* 
-@media only screen and (min-width: 992px) and (min-width: 1199px)  {
-  .title-heading::after{
-    right: -30px;
-    top: 30px;
-  }
-  
+.char:nth-child(28) {
+  animation-delay: 4.6s;
+}
+.char:nth-child(29) {
+  animation-delay: 4.8s;
+}
+.char:nth-child(30) {
+  animation-delay: 5s;
+}
+.char:nth-child(31) {
+  animation-delay: 5.2s;
+}
+.char:nth-child(32) {
+  animation-delay: 5.4s;
+}
+.char:nth-child(33) {
+  animation-delay: 5.6s;
+}
+.char:nth-child(34) {
+  animation-delay: 5.8s;
+}
+.char:nth-child(35) {
+  animation-delay: 6s;
+}
+.char:nth-child(36) {
+  animation-delay: 6.2s;
+}
+.char:nth-child(37) {
+  animation-delay: 6.4s;
+}
+.char:nth-child(38) {
+  animation-delay: 6.6s;
+}
+.char:nth-child(39) {
+  animation-delay: 6.8s;
+}
+.char:nth-child(40) {
+  animation-delay: 7s;
+}
+
+.title-subheading {
+  animation-delay: 7.3s;
+}
+
+@keyframes loading-text {
+  /* 0% {
+    transform: translateY(0%);
+    opacity: 0;
   } */
-/* @media only screen and (min-width: 768px) and (min-width: 991px)  {
-    .title-heading::after{
-      right: 90px;
-      top: -15px;
-    }
-    
-    } */
+  /* 20% {
+    transform: translateY(-60%);
+    opacity: 1;
+  } */
+  /* 40% {
+    transform: translateX(30%);
+    opacity: 0;
+  } */
+  0% {
+    transform: translateX(60%);
+    opacity: 0;
+    /* transform: scale(0);  */
+  }
+
+  /* 
+  100% {
+    transform: translateX(-50%);
+    opacity: 1;
+  } */
+  /* 60% {
+    transform: translateX(50%);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  } */
+  /* 100% {
+    opacity: 1;
+  } */
+}
+
 @media only screen and (max-width: 768px) {
-  .title-heading::after {
+  .loading-text::after {
     right: 0px;
-    top: -40px;
+    top: -50px;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .title-heading::after {
+  .loading-text::after {
     right: 0px;
-    top: -40px;
+    top: -50px;
   }
 }
 
 @media only screen and (min-width: 992px) and (min-width: 1199px) {
   .title-subheading {
-    bottom: 10px;
+    bottom: -20px;
   }
 }
 

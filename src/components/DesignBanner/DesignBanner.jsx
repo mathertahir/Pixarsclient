@@ -23,18 +23,61 @@ const DesignBanner = () => {
                   </a>
                 </div>
 
-                <div className="title-wrapper">
-                  <h1 className="cl-white f-500 f-sanserif  title-heading fs-110 position-relative">
-                    <span className="cright">We</span>{" "}
-                    <span className="cright">create </span>
-                    <span className="cright">create Unique & digital</span>
-                    <span className="cright"> experiences globally</span>
-                  </h1>
-                  <div className="position-relative">
+                <div className="title-wrapper   ">
+                  <h2 class="loading-text  fs-110   cl-white f-500 f-kanit position-relative ">
+                    <span class="char">W</span>
+                    <span class="char mr-20">e</span>
+                    <span class="char">C</span>
+                    <span class="char">r</span>
+                    <span class="char">e</span>
+                    <span class="char">a</span>
+                    <span class="char">t</span>
+                    <span class="char mr-20">e</span>
+                    <span class="char">U</span>
+                    <span class="char">n</span>
+                    <span class="char">i</span>
+                    <span class="char">q</span>
+                    <span class="char">u</span>
+                    <span class="char mr-20">e</span>
+                    <span class="char mr-20">&</span>
+                    <span class="char">d</span>
+                    <span class="char">i</span>
+                    <span class="char">g</span>
+                    <span class="char">i</span>
+                    <span class="char">t</span>
+                    <span class="char">a</span>
+                    <span class="char mr-20">l</span>
+                    <span class="char">e</span>
+                    <span class="char">x</span>
+                    <span class="char">p</span>
+                    <span class="char">e</span>
+                    <span class="char">r</span>
+                    <span class="char">i</span>
+                    <span class="char">e</span>
+                    <span class="char">n</span>
+                    <span class="char">c</span>
+                    <span class="char">e</span>
+                    <span class="char mr-20">s</span>
+                    <span class="char">g</span>
+                    <span class="char">l</span>
+                    <span class="char">b</span>
+                    <span class="char">a</span>
+                    <span class="char">l</span>
+                    <span class="char">l</span>
+                    <span class="char">y</span>
+
+                    <p className="title-subheading cl-white char">
+                      <div className="f-kanit ">
+                        digitl design agency studio
+                      </div>
+                    </p>
+                  </h2>
+
+                  {/* <div className="">
                     <p className="title-subheading cl-white">
                       <div className="f-kanit">digitl design agency studio</div>
                     </p>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="arrow-section-main  ">
