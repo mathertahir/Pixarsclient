@@ -4,8 +4,18 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./design-banner.css";
 import { BsArrowUpRight } from "react-icons/bs";
+import { useRef, useEffect } from "react";
 
 const DesignBanner = () => {
+  const parentRef = useRef(null);
+
+  useEffect(() => {
+    const children = parentRef.current.querySelectorAll(".char");
+    for (let i = 0; i < children.length; i++) {
+      children[i].style.animationDelay = -40000 + i * 1000 + "ms";
+    }
+  }, []);
+
   return (
     <>
       <div className="design-banner-main">
@@ -24,7 +34,10 @@ const DesignBanner = () => {
                 </div>
 
                 <div className="title-wrapper   ">
-                  <h2 class="loading-text  fs-110   cl-white f-500 f-kanit position-relative ">
+                  <h2
+                    class="loading-text  fs-110   cl-white f-500 f-kanit position-relative "
+                    ref={parentRef}
+                  >
                     <span class="char">W</span>
                     <span class="char mr-20">e</span>
                     <span class="char">C</span>
