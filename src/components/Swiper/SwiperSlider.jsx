@@ -1,12 +1,33 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useEffect, useState } from "react";
 
 import "./swiperstyle.css";
 import { Container } from "react-bootstrap";
 import "./slider.css";
 
 const SwiperSlider = () => {
+  // const [scrollPosition, setScrollPosition] = useState(0);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollPosition(window.scrollY);
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+  // useEffect(() => {
+  //   const parallaxImage = document.querySelector(".parallax-container img");
+  //   parallaxImage.style.transform =
+  //     "translateY(" + -(scrollPosition * 0.3) + "px)";
+  // }, [scrollPosition]);
+
   return (
     <>
       <div className="swiper-1  overflow-hidden  ">
@@ -32,13 +53,55 @@ const SwiperSlider = () => {
               {" "}
               Agency
             </div>
+
+            <div class="Marquee-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Element
+            </div>
+            <div class="Marquee-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Digital Solution
+            </div>
+            <div class="Marquee-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Strategy
+            </div>
+            <div class="Marquee-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Branding
+            </div>
+            <div class="Marquee-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Agency
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="swiper-2  overflow-hidden ">
-        <div class="Marquee-right  mx-0 overflow-hidden ">
-          <div class="Marquee-right-content">
+      <div className="swiper-2  overflow-hidden position-relative ">
+        <div class="marqueeright  mx-0 overflow-hidden ">
+          <div class="marquee-right-content">
+            <div class="Marquee-right-tag  fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Element
+            </div>
+            <div class="Marquee-right-tag  fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Digital Solution
+            </div>
+            <div class="Marquee-right-tag  fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Strategy
+            </div>
+            <div class="Marquee-right-tag  fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Branding
+            </div>
+            <div class="Marquee-right-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Agency
+            </div>
+
             <div class="Marquee-right-tag  fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
               {" "}
               Element
@@ -93,8 +156,14 @@ const SwiperSlider = () => {
 
           <Row className="align-items-center  gx-5 mx-0">
             <Col md={4} sm={12} className="">
-              <div className="about-left-img  ">
-                <img src="images/about-left.png  " className="w-100"></img>
+              <div className="parallax-container">
+                {" "}
+                <div className="about-left-img  ">
+                  <img
+                    src="images/about-left.png  "
+                    className="w-100   left-img"
+                  ></img>
+                </div>
               </div>
             </Col>
             <Col md={8} className="p-40">

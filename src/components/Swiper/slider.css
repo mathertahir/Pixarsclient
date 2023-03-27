@@ -9,7 +9,7 @@
 
 .Marquee-content {
   display: flex;
-  animation: marquee 3s linear infinite running;
+  animation: marquee 5s linear infinite running;
 }
 
 .Marquee-tag {
@@ -21,27 +21,29 @@
   transition: all 10s ease;
 }
 
-.Marquee-right {
+.marqueeright {
   width: 100vw;
   box-sizing: border-box;
 
   display: flex;
+
   align-items: center;
   overflow: hidden;
-}
-
-.Marquee-right-content {
-  display: flex;
-  animation: marqueeright 4s linear infinite running;
 }
 
 .Marquee-right-tag {
   width: 300px;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
   transition: all 10s ease;
+}
+
+.marquee-right-content {
+  display: flex;
+  animation: marqueeright 5s linear infinite running;
 }
 
 @keyframes marquee {
@@ -55,51 +57,65 @@
 
 @keyframes marqueeright {
   0% {
+    transform: translateX(-50%);
     transform: translateX(0);
   }
   100% {
-    transform: translate(50%);
+    transform-origin: 50%;
+
+    transform: translateX(+50%);
   }
 }
 
 .about-desc-data {
-  animation: fadeInUp 1s ease-in-out 5s forwards;
+  animation: fadeUp 1s ease-in-out 5s forwards;
 }
 
 .first {
-  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation: fadeUp 1.2s ease-in-out 0s forwards;
 }
 .second {
-  animation: fadeInUp 2s ease-in-out 0s forwards;
+  animation: fadeUp 1.3s ease-in-out 0s forwards;
 }
 .third {
-  animation: fadeInUp 3s ease-in-out 0s forwards;
+  animation: fadeUp 1.4s ease-in-out 0s forwards;
 }
 .fourth {
-  animation: fadeInUp 4s ease-in-out 0s forwards;
+  animation: fadeUp 1.6s ease-in-out 0s forwards;
 }
 .fifth {
-  animation: fadeInUp 3s ease-in-out 0s forwards;
+  animation: fadeUp 1.8s ease-in-out 0s forwards;
 }
 .sixth {
-  animation: fadeInUp 2s ease-in-out 0s forwards;
+  animation: fadeUp 1.1s ease-in-out 0s forwards;
 }
 
 .seventh {
-  animation: fadeInUp 2s ease-in-out 0s forwards;
+  animation: fadeUp 1.12s ease-in-out 0s forwards;
 }
 
 .eighth {
-  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation: fadeUp 1.14s ease-in-out 0s forwards;
 }
 
 .ninth {
-  animation: fadeInUp 3s ease-in-out 0s forwards;
+  animation: fadeUp 1.16s ease-in-out 0s forwards;
 }
 .tenth {
-  animation: fadeInUp 2s ease-in-out 0s forwards;
+  animation: fadeUp 1.18s ease-in-out 0s forwards;
 }
 
 .eleventh {
-  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation: fadeUp 2s ease-in-out 0s forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translate3d(0px, 60%, 0px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
