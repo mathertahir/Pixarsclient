@@ -12,34 +12,26 @@
   padding: 31px 10px;
 }
 
-/* .about-left-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+.about-left-img {
+  height: 500px;
   overflow: hidden;
+  position: relative;
 }
 
-.about-left-img img {
+.left-image-section {
+  background-image: url("../../../public/images/about-left.png");
+  background-size: contain;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vw;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  transform: translate3d(0, 0, 0);
-  will-change: transform;
+  width: 150vw;
 }
-
-.about-left-img img:hover {
-  transform: translate3d(
-    0,
-    -50px,
-    0
-  ); /* adjust the distance and direction as needed */
 
 .about-area {
   background-color: var(--black2);
-  /* overflow-y: auto; */
 }
 
 .about-maintitle {

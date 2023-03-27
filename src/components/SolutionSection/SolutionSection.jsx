@@ -43,7 +43,7 @@ const SolutionSection = () => {
           </Col>
 
           <Col xl={8} lg={12} md={12}>
-            <div className="service-list">
+            <div className="service-list  position-relative">
               <a className="service-area-main text-decoration-none">
                 <div>
                   <span className="fs-28 f-kanit fw-400 cl-white  current ">
@@ -63,8 +63,10 @@ const SolutionSection = () => {
                   </p>
                 </div>
 
-                <div className="fs-48  text-end">
-                  <BsArrowUpRight className="cl-white  f-28" />
+                <div className="fs-48  text-align-end  position-relative ">
+                  <p className="foreground">
+                    <i className="my-arrow"></i>
+                  </p>
                 </div>
               </a>
 
@@ -85,8 +87,10 @@ const SolutionSection = () => {
                   </p>
                 </div>
 
-                <div className="fs-48  text-end">
-                  <BsArrowUpRight className="cl-white  f-28" />
+                <div className="fs-48  position-relative   service-link">
+                  <p className="foreground">
+                    <i className="my-arrow"></i>
+                  </p>
                 </div>
               </a>
 
@@ -107,8 +111,10 @@ const SolutionSection = () => {
                   </p>
                 </div>
 
-                <div className="fs-48  text-end">
-                  <BsArrowUpRight className="cl-white  f-28" />
+                <div className="fs-48  position-relative   service-link">
+                  <p className="foreground">
+                    <i className="my-arrow"></i>
+                  </p>
                 </div>
               </a>
 
@@ -129,8 +135,10 @@ const SolutionSection = () => {
                   </p>
                 </div>
 
-                <div className="fs-48  text-end">
-                  <BsArrowUpRight className="cl-white  f-28" />
+                <div className="fs-48  position-relative   service-link">
+                  <span className="foreground">
+                    <i className="my-arrow"></i>
+                  </span>
                 </div>
               </a>
             </div>

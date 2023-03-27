@@ -57,13 +57,10 @@
 
 @keyframes marqueeright {
   0% {
-    transform: translateX(-50%);
-    transform: translateX(0);
+    transform: translate(-50%);
   }
   100% {
-    transform-origin: 50%;
-
-    transform: translateX(+50%);
+    transform: translate(0);
   }
 }
 

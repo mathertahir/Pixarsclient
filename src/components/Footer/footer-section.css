@@ -1,71 +1,83 @@
-.footer-main{
- position: relative;
+.footer-main {
+  position: relative;
 
-z-index: -1; 
+  z-index: -1;
 }
-.footer-pic{
-    text-align: end;
-
-}
-
-.footer-top{
-    background-color: var(--black);
-}
-.footer-inner{
-
-    background-color:var(--black5);
-
-    margin-bottom: -85px;
-
+.footer-pic {
+  text-align: end;
 }
 
-.footer-img{
-    height: 45px;
+.footer-top {
+  background-color: var(--black);
+}
+.footer-inner {
+  background-color: var(--black5);
+
+  margin-bottom: -85px;
 }
 
-.pixarsart-desc p{
-    max-width: 310px;
-
+.footer-img {
+  height: 45px;
 }
 
-.footer-link{
-    list-style: none;
-    padding-left: 0px;
+.pixarsart-desc p {
+  max-width: 310px;
 }
 
-.mind-title{
-    line-height: 1.3;
-    padding-bottom: 25px;
-    margin-top: -10px;
+.footer-link {
+  list-style: none;
+  padding-left: 0px;
 }
 
-.mind-section-main{
- background-color: var(--black4);
+.mind-title {
+  line-height: 1.3;
+  padding-bottom: 25px;
+  margin-top: -10px;
 }
 
-.copywrite-data{
-    max-width: 200px;
+.mind-section-main {
+  background-color: var(--black4);
 }
 
-.copywrite-main{
-    background-color: var(--black5);
+.copywrite-data {
+  max-width: 200px;
 }
 
-.copy-write-right{
-    background-color: var(--black4);
+.copywrite-main {
+  background-color: var(--black5);
 }
 
-
-.footer-inner-main{
-    position: absolute;
-    z-index: 4;
-    top: 16rem;
-    
-
+.copy-write-right {
+  background-color: var(--black4);
 }
 
-.footer-image{
-    max-width: 75%;
+.footer-inner-main {
+  position: absolute;
+  z-index: 4;
+  top: 16rem;
+}
+
+.footer-image {
+  max-width: 75%;
+}
+
+.footer-pic-container {
+  overflow: hidden;
+  position: relative;
+
+  height: 50vw;
+}
+.footer-pic {
+  background-image: url(../../../public/images/footer.jpg);
+  background-size: contain;
+  background-position: right;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 /* @media only screen and  (min-width: 0px)  and (max-width: 576px) {
@@ -80,25 +92,8 @@ z-index: -1;
     
     } */
 
-    @media only screen and  (min-width: 0px) and (max-width:768px)  {
-
-
-
-        .footer-image{
-    
-   max-width: 100% !important;
-        }
-        
-        }
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .footer-image {
+    max-width: 100% !important;
+  }
+}

@@ -12,7 +12,7 @@ const DesignBanner = () => {
   useEffect(() => {
     const children = parentRef.current.querySelectorAll(".char");
     for (let i = 0; i < children.length; i++) {
-      children[i].style.animationDelay = -40000 + i * 1000 + "ms";
+      children[i].style.animationDelay = i * 20 + "ms";
     }
   }, []);
 
@@ -28,7 +28,7 @@ const DesignBanner = () => {
                     {" "}
                     Strategy, Design, Solution Development{" "}
                     <span className="pic-icon">
-                      <BsArrowUpRight className="cl-white" />
+                      <i className="cl-white  arrow2"></i>
                     </span>
                   </a>
                 </div>

@@ -1,33 +1,13 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 import "./swiperstyle.css";
 import { Container } from "react-bootstrap";
 import "./slider.css";
 
 const SwiperSlider = () => {
-  // const [scrollPosition, setScrollPosition] = useState(0);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setScrollPosition(window.scrollY);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   const parallaxImage = document.querySelector(".parallax-container img");
-  //   parallaxImage.style.transform =
-  //     "translateY(" + -(scrollPosition * 0.3) + "px)";
-  // }, [scrollPosition]);
-
   return (
     <>
       <div className="swiper-1  overflow-hidden  ">
@@ -154,15 +134,12 @@ const SwiperSlider = () => {
             </Col>
           </Row>
 
-          <Row className="align-items-center  gx-5 mx-0">
-            <Col md={4} sm={12} className="">
+          <Row className="  gx-5 mx-0">
+            <Col md={4} sm={12} className="align-items-center">
               <div className="parallax-container">
                 {" "}
                 <div className="about-left-img  ">
-                  <img
-                    src="images/about-left.png  "
-                    className="w-100   left-img"
-                  ></img>
+                  <div className="left-image-section"></div>
                 </div>
               </div>
             </Col>
