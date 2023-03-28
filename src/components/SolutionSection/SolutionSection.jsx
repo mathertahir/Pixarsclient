@@ -7,16 +7,22 @@ const SolutionSection = () => {
   return (
     <div className="solution-main">
       <Container>
-        <Row className="mx-0 pt-5 pb-5  align-items-start align-items-md-center g-3   ">
+        <Row className="mx-0 pt-5 pb-5  align-items-start align-items-md-center g-3    ">
           <Col md={4}>
-            <div className="fs-18 f-kanit fw-400 cl-white ">Service</div>
+            <div className="fs-18 f-kanit fw-400 cl-white  solution-anim  ">
+              Service
+            </div>
             <h2>
-              <div className="fs-60 fw-500 f-kanit cl-white ">Solution We</div>
-              <div className="fs-60 fw-500 f-kanit cl-white ">Provided</div>
+              <div className="fs-60 fw-500 f-kanit cl-white solution-anim  ">
+                Solution We
+              </div>
+              <div className="fs-60 fw-500 f-kanit cl-white  solution-anim ">
+                Provided
+              </div>
             </h2>
           </Col>
           <Col md={5}>
-            <span className="fs-20 fw-400 cl-white ">
+            <span className="fs-20 fw-400 cl-white solution-anim ">
               You have come to the Right Place PixarsArt is a Unified Platform
               for all things of Web & Mobile
             </span>
@@ -25,11 +31,14 @@ const SolutionSection = () => {
             md={3}
             className="d-flex   justify-content-start justify-content-md-end"
           >
-            <div>
-              <a className="cl-white  btn-secondary">
-                Contact us
-                <BsArrowUpRight className="cl-white  arrow-sign" />
-              </a>
+            <div className="btn-cta">
+              <Button variant="outline-light  button-add position-relative">
+                <a className="  btn-secondary">
+                  <span className="btn-animate"></span>
+                  Contact us
+                  <BsArrowUpRight className="  arrow-sign" />
+                </a>
+              </Button>{" "}
             </div>
           </Col>
         </Row>
@@ -44,20 +53,20 @@ const SolutionSection = () => {
 
           <Col xl={8} lg={12} md={12}>
             <div className="service-list ">
-              <a className="service-area-main text-decoration-none   ">
+              <a className="service-area-main text-decoration-none fade-right-anim  ">
                 <div className="service-item     position-relative ">
                   <div>
                     <span className="fs-28 f-kanit fw-400   service-count current ">
                       01
                     </span>
                   </div>
-                  <div>
-                    <span className="fs-28 f-kanit fw-400 service-title ">
+                  <div className="fade-to-right">
+                    <span className="fs-28 f-kanit fw-400 service-title   ">
                       search Engine <br /> Optimization
                     </span>
                   </div>
 
-                  <div className="service-text">
+                  <div className="service-text fade-to-right">
                     <p className="fs-16 f-kanit fw-400 service-text ">
                       Planning and sketching Modern and unique design
                       practically point of view, it risks not meeting the huge
@@ -65,7 +74,7 @@ const SolutionSection = () => {
                     </p>
                   </div>
 
-                  <div className=" service-arrow  position-relative ">
+                  <div className=" service-arrow  position-relative fade-to-right ">
                     <p className="foreground">
                       <i className="my-arrow"></i>
                     </p>
@@ -80,13 +89,13 @@ const SolutionSection = () => {
                       02
                     </span>
                   </div>
-                  <div>
+                  <div className="fade-to-right">
                     <span className="fs-28 f-kanit fw-400  service-title ">
                       search Engine <br /> Optimization
                     </span>
                   </div>
 
-                  <div className="service-text">
+                  <div className="service-text fade-to-right">
                     <p className="fs-16 f-kanit fw-400 service-text">
                       Planning and sketching Modern and unique design
                       practically point of view, it risks not meeting the huge
@@ -94,7 +103,7 @@ const SolutionSection = () => {
                     </p>
                   </div>
 
-                  <div className=" service-arrow  position-relative ">
+                  <div className=" service-arrow  position-relative fade-to-right ">
                     <p className="foreground">
                       <i className="my-arrow"></i>
                     </p>
@@ -109,13 +118,13 @@ const SolutionSection = () => {
                       03
                     </span>
                   </div>
-                  <div>
+                  <div className="fade-to-right">
                     <span className="fs-28 f-kanit fw-400   service-title  ">
                       search Engine <br /> Optimization
                     </span>
                   </div>
 
-                  <div className="service-text">
+                  <div className="service-text fade-to-right">
                     <p className="fs-16 f-kanit fw-400 service-text ">
                       Planning and sketching Modern and unique design
                       practically point of view, it risks not meeting the huge
@@ -123,7 +132,7 @@ const SolutionSection = () => {
                     </p>
                   </div>
 
-                  <div className=" service-arrow  position-relative ">
+                  <div className=" service-arrow  position-relative fade-to-right ">
                     <p className="foreground">
                       <i className="my-arrow"></i>
                     </p>
@@ -138,13 +147,13 @@ const SolutionSection = () => {
                       04
                     </span>
                   </div>
-                  <div>
+                  <div className="fade-to-right">
                     <span className="fs-28 f-kanit fw-400  service-title ">
                       search Engine <br /> Optimization
                     </span>
                   </div>
 
-                  <div className="service-text">
+                  <div className="service-text fade-to-right">
                     <p className="fs-16 f-kanit fw-400 service-text ">
                       Planning and sketching Modern and unique design
                       practically point of view, it risks not meeting the huge
@@ -152,7 +161,7 @@ const SolutionSection = () => {
                     </p>
                   </div>
 
-                  <div className=" service-arrow  position-relative ">
+                  <div className=" service-arrow  position-relative  fade-to-right">
                     <p className="foreground">
                       <i className="my-arrow"></i>
                     </p>
@@ -169,7 +178,9 @@ const SolutionSection = () => {
           <Row className="mx-0  pb-3">
             <Col sm={12}>
               <div>
-                <h2 className="cl-white fs-60 f-kanit">Who we are? </h2>
+                <h2 className="cl-white fs-60 f-kanit solution-anim">
+                  Who we are?{" "}
+                </h2>
               </div>
             </Col>
           </Row>
@@ -178,36 +189,42 @@ const SolutionSection = () => {
             <Col sm={8} className="justify-content-center">
               <div className="d-flex justify-content-start   justify-content-sm-end">
                 <p className="cl-gray2 fs-18 fw-400 f-kanit">
-                  <div>
+                  <div className="solution-anim">
                     We value you and your brand. Analysis of your goals is{" "}
                   </div>
-                  <div>
+                  <div className="solution-anim">
                     a primary step in our work process. We want to get to{" "}
                   </div>
-                  <div>know you and your business goals and then </div>
-                  <div>
+                  <div className="solution-anim">
+                    know you and your business goals and then{" "}
+                  </div>
+                  <div className="solution-anim">
                     collaborate together to turn your ideas into reality.Our{" "}
                   </div>
                   <div>&nbsp;</div>
 
-                  <div>
+                  <div className="solution-anim">
                     goal is to give your products the futuristic and present{" "}
                   </div>
-                  <div>
+                  <div className="solution-anim">
                     edge to lead the way through. We partner with you in{" "}
                   </div>
-                  <div>
+                  <div className="solution-anim">
                     idea generation and build the path towards success for{" "}
                   </div>
-                  <div>
+                  <div className="solution-anim">
                     you and us. Our workYou get to work with some of the{" "}
                   </div>
                   <div>&nbsp;</div>
-                  <div>most talented web developers, designers, creative </div>
-                  <div>
+                  <div className="solution-anim">
+                    most talented web developers, designers, creative{" "}
+                  </div>
+                  <div className="solution-anim">
                     thinkers and innovators in our team. Website designing{" "}
                   </div>
-                  <div>and development catered just for you. </div>
+                  <div className="solution-anim">
+                    and development catered just for you.{" "}
+                  </div>
 
                   <div>&nbsp;</div>
                 </p>
@@ -217,11 +234,14 @@ const SolutionSection = () => {
               sm={4}
               className="d-flex justify-content-start  justify-content-sm-end"
             >
-              <div>
-                <a className="cl-white  btn-secondary">
-                  Contact us
-                  <BsArrowUpRight className="cl-white  arrow-sign" />
-                </a>
+              <div className="btn-cta">
+                <Button variant="outline-light  button-add position-relative">
+                  <a className="  btn-secondary">
+                    <span className="btn-animate"></span>
+                    Contact us
+                    <BsArrowUpRight className=" arrow-sign" />
+                  </a>
+                </Button>{" "}
               </div>
             </Col>
           </Row>
@@ -315,12 +335,14 @@ const SolutionSection = () => {
                   </div>
                 </div>
 
-                <div className="btn-cta  pt-3 ">
-                  <span className="btn-background"></span>
-                  <a className="cl-white  btn-secondary">
-                    Contact us
-                    <BsArrowUpRight className="cl-white  arrow-sign" />
-                  </a>
+                <div className="btn-cta  pt-3  bounce-top ">
+                  <Button variant="outline-light  button-add position-relative">
+                    <a className="  btn-secondary">
+                      <span className="btn-animate"></span>
+                      Contact us
+                      <BsArrowUpRight className="  arrow-sign" />
+                    </a>
+                  </Button>{" "}
                 </div>
               </div>
             </Col>

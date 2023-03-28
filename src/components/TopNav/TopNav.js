@@ -20,7 +20,7 @@ const TopNav = () => {
   return (
     <div>
       <div className="container-fluid  header-main ">
-        <Navbar bg="trasparent" expand="lg">
+        <Navbar bg="trasparent">
           <Navbar.Brand href="#home">
             <img
               src="images/Logo-5.png"
@@ -32,7 +32,7 @@ const TopNav = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
-            <Nav className="ms-auto">
+            <Nav className="ms-auto  nav-middle-area">
               <Nav.Link
                 href="#home"
                 className="cl-white fs-16 fw-400 f-sansserif  nav-title "

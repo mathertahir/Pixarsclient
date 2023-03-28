@@ -69,7 +69,7 @@ const App = () => {
       link.addEventListener("mouseover", () => {
         mouseCursor.classList.add("link-grow");
         gsap.to(mouseCursor, 0.4, {
-          scale: 2,
+          scale: 1,
         });
       });
     });

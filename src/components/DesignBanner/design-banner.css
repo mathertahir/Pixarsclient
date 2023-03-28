@@ -77,7 +77,7 @@
 }
 
 .loading-text {
-  max-width: 687px;
+  max-width: 990px;
   line-height: 0.9;
 
   animation: timer 5s ease-in-out;
