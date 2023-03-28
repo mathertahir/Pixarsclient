@@ -43,102 +43,120 @@ const SolutionSection = () => {
           </Col>
 
           <Col xl={8} lg={12} md={12}>
-            <div className="service-list  position-relative">
-              <a className="service-area-main text-decoration-none">
-                <div>
-                  <span className="fs-28 f-kanit fw-400 cl-white  current ">
-                    01
-                  </span>
-                </div>
-                <div>
-                  <span className="fs-28 f-kanit fw-400 cl-white ">
-                    search Engine <br /> Optimization
-                  </span>
-                </div>
+            <div className="service-list  ">
+              <a className="service-area-main text-decoration-none  position-relative  ">
+                <div className="service-item">
+                  <div>
+                    <span className="fs-28 f-kanit fw-400 cl-white  current ">
+                      01
+                    </span>
+                  </div>
+                  <div>
+                    <span className="fs-28 f-kanit fw-400 cl-white ">
+                      search Engine <br /> Optimization
+                    </span>
+                  </div>
 
-                <div className="service-text">
-                  <p className="fs-16 f-kanit fw-400 cl-gray2 ">
-                    Planning and sketching Modern and unique design practically
-                    point of view, it risks not meeting the huge expectations .
-                  </p>
-                </div>
+                  <div className="service-text">
+                    <p className="fs-16 f-kanit fw-400 cl-gray2 ">
+                      Planning and sketching Modern and unique design
+                      practically point of view, it risks not meeting the huge
+                      expectations .
+                    </p>
+                  </div>
 
-                <div className="fs-48  text-align-end  position-relative ">
-                  <p className="foreground">
-                    <i className="my-arrow"></i>
-                  </p>
+                  <div className=" service-arrow  position-relative ">
+                    <p className="foreground">
+                      <i className="my-arrow"></i>
+                    </p>
+                  </div>
                 </div>
               </a>
 
-              <a className="service-area-main text-decoration-none">
-                <div>
-                  <span className="fs-28 f-kanit fw-400 cl-white ">01</span>
-                </div>
-                <div>
-                  <span className="fs-28 f-kanit fw-400 cl-white ">
-                    search Engine <br /> Optimization
-                  </span>
-                </div>
+              <a className="service-area-main text-decoration-none   ">
+                <div className="service-item">
+                  <div>
+                    <span className="fs-28 f-kanit fw-400 cl-white  current ">
+                      01
+                    </span>
+                  </div>
+                  <div>
+                    <span className="fs-28 f-kanit fw-400 cl-white ">
+                      search Engine <br /> Optimization
+                    </span>
+                  </div>
 
-                <div className="service-text">
-                  <p className="fs-16 f-kanit fw-400 cl-gray2 ">
-                    Planning and sketching Modern and unique design practically
-                    point of view, it risks not meeting the huge expectations .
-                  </p>
-                </div>
+                  <div className="service-text">
+                    <p className="fs-16 f-kanit fw-400 cl-gray2 ">
+                      Planning and sketching Modern and unique design
+                      practically point of view, it risks not meeting the huge
+                      expectations .
+                    </p>
+                  </div>
 
-                <div className="fs-48  position-relative   service-link">
-                  <p className="foreground">
-                    <i className="my-arrow"></i>
-                  </p>
+                  <div className=" service-arrow  position-relative ">
+                    <p className="foreground">
+                      <i className="my-arrow"></i>
+                    </p>
+                  </div>
                 </div>
               </a>
 
-              <a className="service-area-main text-decoration-none">
-                <div>
-                  <span className="fs-28 f-kanit fw-400 cl-white ">01</span>
-                </div>
-                <div>
-                  <span className="fs-28 f-kanit fw-400 cl-white ">
-                    search Engine <br /> Optimization
-                  </span>
-                </div>
+              <a className="service-area-main text-decoration-none   ">
+                <div className="service-item">
+                  <div>
+                    <span className="fs-28 f-kanit fw-400 cl-white  current ">
+                      01
+                    </span>
+                  </div>
+                  <div>
+                    <span className="fs-28 f-kanit fw-400 cl-white ">
+                      search Engine <br /> Optimization
+                    </span>
+                  </div>
 
-                <div className="service-text">
-                  <p className="fs-16 f-kanit fw-400 cl-gray2 ">
-                    Planning and sketching Modern and unique design practically
-                    point of view, it risks not meeting the huge expectations .
-                  </p>
-                </div>
+                  <div className="service-text">
+                    <p className="fs-16 f-kanit fw-400 cl-gray2 ">
+                      Planning and sketching Modern and unique design
+                      practically point of view, it risks not meeting the huge
+                      expectations .
+                    </p>
+                  </div>
 
-                <div className="fs-48  position-relative   service-link">
-                  <p className="foreground">
-                    <i className="my-arrow"></i>
-                  </p>
+                  <div className=" service-arrow  position-relative ">
+                    <p className="foreground">
+                      <i className="my-arrow"></i>
+                    </p>
+                  </div>
                 </div>
               </a>
 
-              <a className="service-area-main text-decoration-none">
-                <div>
-                  <span className="fs-28 f-kanit fw-400 cl-white ">01</span>
-                </div>
-                <div>
-                  <span className="fs-28 f-kanit fw-400 cl-white ">
-                    search Engine <br /> Optimization
-                  </span>
-                </div>
+              <a className="service-area-main text-decoration-none   ">
+                <div className="service-item">
+                  <div>
+                    <span className="fs-28 f-kanit fw-400 cl-white  current ">
+                      01
+                    </span>
+                  </div>
+                  <div>
+                    <span className="fs-28 f-kanit fw-400 cl-white ">
+                      search Engine <br /> Optimization
+                    </span>
+                  </div>
 
-                <div className="service-text">
-                  <p className="fs-16 f-kanit fw-400 cl-gray2 ">
-                    Planning and sketching Modern and unique design practically
-                    point of view, it risks not meeting the huge expectations .
-                  </p>
-                </div>
+                  <div className="service-text">
+                    <p className="fs-16 f-kanit fw-400 cl-gray2 ">
+                      Planning and sketching Modern and unique design
+                      practically point of view, it risks not meeting the huge
+                      expectations .
+                    </p>
+                  </div>
 
-                <div className="fs-48  position-relative   service-link">
-                  <span className="foreground">
-                    <i className="my-arrow"></i>
-                  </span>
+                  <div className=" service-arrow  position-relative ">
+                    <p className="foreground">
+                      <i className="my-arrow"></i>
+                    </p>
+                  </div>
                 </div>
               </a>
             </div>
