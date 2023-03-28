@@ -43,22 +43,22 @@ const SolutionSection = () => {
           </Col>
 
           <Col xl={8} lg={12} md={12}>
-            <div className="service-list  ">
-              <a className="service-area-main text-decoration-none  position-relative  ">
-                <div className="service-item">
+            <div className="service-list ">
+              <a className="service-area-main text-decoration-none   ">
+                <div className="service-item     position-relative ">
                   <div>
-                    <span className="fs-28 f-kanit fw-400 cl-white  current ">
+                    <span className="fs-28 f-kanit fw-400   service-count current ">
                       01
                     </span>
                   </div>
                   <div>
-                    <span className="fs-28 f-kanit fw-400 cl-white ">
+                    <span className="fs-28 f-kanit fw-400 service-title ">
                       search Engine <br /> Optimization
                     </span>
                   </div>
 
                   <div className="service-text">
-                    <p className="fs-16 f-kanit fw-400 cl-gray2 ">
+                    <p className="fs-16 f-kanit fw-400 service-text ">
                       Planning and sketching Modern and unique design
                       practically point of view, it risks not meeting the huge
                       expectations .
@@ -76,18 +76,18 @@ const SolutionSection = () => {
               <a className="service-area-main text-decoration-none   ">
                 <div className="service-item">
                   <div>
-                    <span className="fs-28 f-kanit fw-400 cl-white  current ">
-                      01
+                    <span className="fs-28 f-kanit fw-400    service-count current ">
+                      02
                     </span>
                   </div>
                   <div>
-                    <span className="fs-28 f-kanit fw-400 cl-white ">
+                    <span className="fs-28 f-kanit fw-400  service-title ">
                       search Engine <br /> Optimization
                     </span>
                   </div>
 
                   <div className="service-text">
-                    <p className="fs-16 f-kanit fw-400 cl-gray2 ">
+                    <p className="fs-16 f-kanit fw-400 service-text">
                       Planning and sketching Modern and unique design
                       practically point of view, it risks not meeting the huge
                       expectations .
@@ -105,18 +105,18 @@ const SolutionSection = () => {
               <a className="service-area-main text-decoration-none   ">
                 <div className="service-item">
                   <div>
-                    <span className="fs-28 f-kanit fw-400 cl-white  current ">
-                      01
+                    <span className="fs-28 f-kanit fw-400  service-count   current ">
+                      03
                     </span>
                   </div>
                   <div>
-                    <span className="fs-28 f-kanit fw-400 cl-white ">
+                    <span className="fs-28 f-kanit fw-400   service-title  ">
                       search Engine <br /> Optimization
                     </span>
                   </div>
 
                   <div className="service-text">
-                    <p className="fs-16 f-kanit fw-400 cl-gray2 ">
+                    <p className="fs-16 f-kanit fw-400 service-text ">
                       Planning and sketching Modern and unique design
                       practically point of view, it risks not meeting the huge
                       expectations .
@@ -134,18 +134,18 @@ const SolutionSection = () => {
               <a className="service-area-main text-decoration-none   ">
                 <div className="service-item">
                   <div>
-                    <span className="fs-28 f-kanit fw-400 cl-white  current ">
-                      01
+                    <span className="fs-28 f-kanit fw-400  service-count current ">
+                      04
                     </span>
                   </div>
                   <div>
-                    <span className="fs-28 f-kanit fw-400 cl-white ">
+                    <span className="fs-28 f-kanit fw-400  service-title ">
                       search Engine <br /> Optimization
                     </span>
                   </div>
 
                   <div className="service-text">
-                    <p className="fs-16 f-kanit fw-400 cl-gray2 ">
+                    <p className="fs-16 f-kanit fw-400 service-text ">
                       Planning and sketching Modern and unique design
                       practically point of view, it risks not meeting the huge
                       expectations .
@@ -316,6 +316,7 @@ const SolutionSection = () => {
                 </div>
 
                 <div className="btn-cta  pt-3 ">
+                  <span className="btn-background"></span>
                   <a className="cl-white  btn-secondary">
                     Contact us
                     <BsArrowUpRight className="cl-white  arrow-sign" />
