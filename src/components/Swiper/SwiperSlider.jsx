@@ -147,38 +147,36 @@ const SwiperSlider = () => {
               <Row className="mx-0 flex-md-column-reverse   flex-lg-row">
                 <Col md={9} sm={12}>
                   <div className="about-description p-30  ">
-                    <p className="">
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit    first">
-                        At Pixarsart our aim is to create the most effective{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  second">
-                        online presence for your brand. We use the latest{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit   third">
-                        technology to provide you with the most intuitive{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit   fourth">
-                        solutions to cater to all your business needs. We want{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  fifth">
-                        are committed to providing creative and innovative{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  sixth">
-                        Backend Development, Digital Product Development,{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  seventh">
-                        Server Management, Continuous Integration and{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  eighth">
-                        eCommerce solutions. We are progressively working{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  ninth">
-                        with clients with legacy systems as well as progressive{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  tenth">
-                        technologies includingVR and AR.{" "}
-                      </div>
-                    </p>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit    first">
+                      At Pixarsart our aim is to create the most effective{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  second">
+                      online presence for your brand. We use the latest{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit   third">
+                      technology to provide you with the most intuitive{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit   fourth">
+                      solutions to cater to all your business needs. We want{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  fifth">
+                      are committed to providing creative and innovative{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  sixth">
+                      Backend Development, Digital Product Development,{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  seventh">
+                      Server Management, Continuous Integration and{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  eighth">
+                      eCommerce solutions. We are progressively working{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  ninth">
+                      with clients with legacy systems as well as progressive{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  tenth">
+                      technologies includingVR and AR.{" "}
+                    </div>
                   </div>
                 </Col>
                 <Col md={3} sm={12} className="p-40  position-relative">

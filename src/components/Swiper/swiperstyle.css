@@ -62,8 +62,9 @@
 
 .about-description {
   padding-top: 65px;
-}
-.about-description p {
+  perspective: 400;
+  z-index: 9;
+  position: relative;
 }
 
 @media (max-width: 760px) {
