@@ -55,6 +55,8 @@
   position: absolute;
   z-index: 4;
   top: 16rem;
+
+  padding-right: 70px;
 }
 
 .footer-image {
@@ -95,5 +97,11 @@
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .footer-image {
     max-width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .footer-inner-main {
+    padding-right: 0px;
   }
 }

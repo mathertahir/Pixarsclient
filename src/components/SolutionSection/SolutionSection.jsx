@@ -1,9 +1,21 @@
 import React from "react";
+import { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { BsArrowUpRight } from "react-icons/bs";
 import "./solution.css";
 
 const SolutionSection = () => {
+  const [hover, setHover] = useState(false);
+  const [active, setActive] = useState(false);
+
+  const toggleHover = () => {
+    setHover(!hover);
+  };
+
+  const toggleActive = () => {
+    setActive(!active);
+  };
+
   return (
     <div className="solution-main">
       <Container>
@@ -22,7 +34,7 @@ const SolutionSection = () => {
             </h2>
           </Col>
           <Col md={5}>
-            <span className="fs-20 fw-400 cl-white solution-anim ">
+            <span className="fs-20 fw-400 cl-white  solution-anim ">
               You have come to the Right Place PixarsArt is a Unified Platform
               for all things of Web & Mobile
             </span>
@@ -46,8 +58,9 @@ const SolutionSection = () => {
         <Row>
           <Col xl={4} lg={0}>
             <div className="img-wrapper  w-100   position-relative ">
-              <img src="images/wrap1.png" className="transit-images   active" />{" "}
-              <span className="badge-screen"></span>
+              <img src="images/wrap1.png" className="transit-images   " />{" "}
+              <img src="images/seo.jpg" className=" seo-image     " />{" "}
+              <span className="badge-screen  "></span>
             </div>
           </Col>
 
@@ -327,10 +340,10 @@ const SolutionSection = () => {
                 </p>
 
                 <div className="cta-title">
-                  <div className="cl-white fs-50 f-kanit fw-500">
+                  <div className="cl-white fs-50 f-kanit fw-500  first">
                     We would love to hear more{" "}
                   </div>
-                  <div className="cl-white fs-50 f-kanit fw-500">
+                  <div className="cl-white fs-50 f-kanit fw-500 second">
                     about your project
                   </div>
                 </div>
@@ -338,7 +351,7 @@ const SolutionSection = () => {
                 <div className="btn-cta  pt-3  bounce-top ">
                   <Button variant="outline-light  button-add position-relative">
                     <a className="  btn-secondary">
-                      <span className="btn-animate"></span>
+                      <span className="btn-animate  btn-pink  "></span>
                       Contact us
                       <BsArrowUpRight className="  arrow-sign" />
                     </a>

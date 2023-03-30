@@ -19,9 +19,9 @@ const FooterSection = () => {
         </Row>
       </div>
 
-      <div className="footer-inner-main">
+      <div className="footer-inner-main  ">
         <div className="footer-inner ">
-          <div className="w-120  container-fluid ">
+          <div className="w-120   container-fluid">
             <Row className="">
               <Col
                 xl={4}
