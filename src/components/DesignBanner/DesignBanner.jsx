@@ -1,20 +1,36 @@
 import React from "react";
+import { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./design-banner.css";
-import { BsArrowUpRight } from "react-icons/bs";
-import { useRef, useEffect } from "react";
 
 const DesignBanner = () => {
-  const parentRef = useRef(null);
+  // const parentRef = useRef(null);
+  // const random = useRef(null);
+  const elementRef = useRef(null);
 
   useEffect(() => {
-    const children = parentRef.current.querySelectorAll(".char");
-    for (let i = 0; i < children.length; i++) {
-      children[i].style.animationDelay = i * 20 + "ms";
-    }
+    animateSequence();
   }, []);
+
+  function animateSequence() {
+    const element = elementRef.current;
+    if (element) {
+      const text = element.textContent.trim();
+      let html = "";
+      let delay = 0;
+      for (let i = 0; i < text.length; i++) {
+        if (text[i] !== " ") {
+          html += `<span style="animation-delay:${delay}ms; -moz-animation-delay:${delay}ms; -webkit-animation-delay:${delay}ms;">${text[i]}</span>`;
+          delay += 100;
+        } else {
+          html += " ";
+        }
+      }
+      element.innerHTML = html;
+    }
+  }
 
   return (
     <>
@@ -34,50 +50,13 @@ const DesignBanner = () => {
                 </div>
 
                 <div className="title-wrapper   ">
-                  <h2
-                    class="loading-text  fs-110   cl-white f-500 f-kanit position-relative "
-                    ref={parentRef}
-                  >
-                    <span class="char">W</span>
-                    <span class="char mr-20">e</span>
-                    <span class="char">C</span>
-                    <span class="char">r</span>
-                    <span class="char">e</span>
-                    <span class="char">a</span>
-                    <span class="char">t</span>
-                    <span class="char mr-20">e</span>
-                    <span class="char">U</span>
-                    <span class="char">n</span>
-                    <span class="char">i</span>
-                    <span class="char">q</span>
-                    <span class="char">u</span>
-                    <span class="char mr-20">e</span>
-                    <span class="char mr-20">&</span>
-                    <span class="char">d</span>
-                    <span class="char">i</span>
-                    <span class="char">g</span>
-                    <span class="char">i</span>
-                    <span class="char">t</span>
-                    <span class="char">a</span>
-                    <span class="char mr-20">l</span>
-                    <span class="char">e</span>
-                    <span class="char">x</span>
-                    <span class="char">p</span>
-                    <span class="char">e</span>
-                    <span class="char">r</span>
-                    <span class="char">i</span>
-                    <span class="char">e</span>
-                    <span class="char">n</span>
-                    <span class="char">c</span>
-                    <span class="char">e</span>
-                    <span class="char mr-20">s</span>
-                    <span class="char">g</span>
-                    <span class="char">l</span>
-                    <span class="char">b</span>
-                    <span class="char">a</span>
-                    <span class="char">l</span>
-                    <span class="char">l</span>
-                    <span class="char">y</span>
+                  <h2 class="loading-text  fs-110   cl-white f-500 f-kanit position-relative ">
+                    <div
+                      class="cssanimation           random     leFadeInLeft      fs-110   cl-white f-500"
+                      ref={elementRef}
+                    >
+                      We Create Unique & digital experiences globally
+                    </div>
 
                     <p className="title-subheading cl-white char">
                       <div className="f-kanit ">
