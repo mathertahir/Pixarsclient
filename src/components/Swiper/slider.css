@@ -74,8 +74,7 @@
   animation: moveup 0.3s linear;
 }
 .second {
-  animation: moveup 0.6 ease-in-out 0s forwards;
-  animation-delay: 10s;
+  animation: moveup 0.6s ease-in-out 0s forwards;
 }
 .third {
   animation: moveup 1.2s ease-in-out 0s forwards;

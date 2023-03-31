@@ -35,7 +35,7 @@ const TopNav = () => {
             <Nav className="ms-auto  nav-middle-area">
               <Nav.Link
                 href="#home"
-                className="cl-white fs-16 fw-400 f-sansserif  nav-title "
+                className="cl-white fs-16 fw-400 f-sansserif  nav-title  service "
               >
                 SERVICE
               </Nav.Link>
