@@ -95,11 +95,13 @@
 
   overflow-clip-margin: content-box;
   overflow: clip;
+  position: absolute;
 }
 
 .transit-images.active {
   transform: rotate(15deg) translateX(60px) translateY(30px);
   opacity: 1;
+  position: relative;
 }
 
 .badge-screen {
@@ -224,11 +226,8 @@
 }
 
 .solution-anim {
-  -webkit-animation: fadetop 4s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: fadetop 4s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-
-  /* -webkit-animation: fadeUp 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: fadeUp 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+  transform-style: preserve-3d;
+  animation: moveup 2s linear;
 }
 
 .fade-to-right {
@@ -388,6 +387,7 @@
   height: 20px;
   opacity: 0;
   background-color: var(--primary);
+
   z-index: -1;
   border-radius: 100%;
   -webkit-transition: all 0.7s;
@@ -412,4 +412,41 @@
 
 .btn-cta:hover .btn-secondary {
   color: #2c2c2c;
+}
+
+@keyframes moveup {
+  0% {
+    transform: perspective(500px) scaleY(0) rotateX(-20deg) translateY(50px);
+
+    opacity: 0;
+  }
+  100% {
+    transform: perspective(500px) scaleY() rotateX(0deg);
+
+    opacity: 1;
+  }
+}
+
+.seo-image {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  transition: all 0.5s;
+  opacity: 0;
+
+  transform: rotate(0deg) translateX(-100px);
+
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  position: absolute;
+}
+
+.active {
+  transform: rotate(15deg) translateX(60px) translateY(30px);
+  opacity: 1;
+  display: visible;
+  position: relative;
 }

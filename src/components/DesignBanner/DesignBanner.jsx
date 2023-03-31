@@ -23,7 +23,7 @@ const DesignBanner = () => {
       for (let i = 0; i < text.length; i++) {
         if (text[i] !== " ") {
           html += `<span style="animation-delay:${delay}ms; -moz-animation-delay:${delay}ms; -webkit-animation-delay:${delay}ms;">${text[i]}</span>`;
-          delay += 100;
+          delay += 90;
         } else {
           html += " ";
         }

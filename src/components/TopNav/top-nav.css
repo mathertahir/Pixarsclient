@@ -1,3 +1,14 @@
+:root {
+  --animation-time: 1s;
+  --hover-animation-time: 0.3s;
+  --animation-delay: 0.1s;
+  --rotateIn: rotateX(0deg) translate(0, 0);
+  --rotate1Out: rotateX(90deg) translate(0, -100%);
+  --rotate2Out: rotateX(90deg) translate(0, 100%);
+  --m: calc(16px * -1);
+  --y: -4px;
+}
+
 .offcanvas-area {
   background-color: var(--black2);
   position: fixed;
@@ -89,4 +100,101 @@
     padding-left: 15px;
     padding-top: 40px;
   }
+}
+/* 
+@keyframes rotate1 {
+  0% {
+    transform: rotateX(0deg) translate(0, 0);
+  }
+  25% {
+    transform: rotateX(90deg) translate(0, -100%);
+  }
+  50% {
+    transform: rotateX(90deg) translate(0, -100%);
+  }
+  75% {
+    transform: rotateX(0deg) translate(0, 0);
+  }
+  100% {
+    transform: rotateX(0deg) translate(0, 0);
+  }
+} */
+
+.random {
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+  transform: translateY(var(--y)) translateZ(0);
+}
+
+.random,
+.random span {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.random span {
+  display: inline-block;
+}
+
+.service span {
+  animation-name: letterup;
+}
+@keyframes letterup {
+  /* 0% {
+    transform: rotateX(0deg) translate(0, 0);
+  }
+  25% {
+    transform: rotateX(-90deg) translate(0);
+  }
+  50% {
+    transform: rotateX(-90deg) translate(1);
+  }
+  75% {
+    transform: rotateX(-90deg) translate(1);
+  }
+  100% {
+    transform: rotateX(-90deg) translate(1);
+  } */
+
+  0% {
+    transform: translateY(-4px) translateZ(0);
+    transition: transform 0.4s ease, box-shadow 0.4s ease,
+      -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+  }
+}
+
+.rotateup {
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+}
+
+.rotateup:hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+  transform: translateY(-4px) translateZ(0);
+}
+
+.rotateup span:nth-child(1) {
+  transition-delay: 0.05s;
+}
+.rotateup span:nth-child(2) {
+  transition-delay: 1s;
+}
+.rotateup span:nth-child(3) {
+  transition-delay: 1s;
+}
+.rotateup span:nth-child(4) {
+  transition-delay: 1s;
+}
+.rotateup span:nth-child(5) {
+  transition-delay: 1s;
+}
+
+.rotateup span {
+  transform: translateY(var(--m)) translateZ(0);
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.roundedup:hover {
+  transform: rotate(-180deg);
 }
