@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,6 +9,9 @@ const DesignBanner = () => {
   // const parentRef = useRef(null);
   // const random = useRef(null);
   const elementRef = useRef(null);
+
+  const [activeElement, setActiveElement] = useState(null);
+  const [scale, setScale] = useState(1);
 
   useEffect(() => {
     animateSequence();
@@ -31,6 +34,24 @@ const DesignBanner = () => {
       element.innerHTML = html;
     }
   }
+
+  const handleHover = () => {
+    setActiveElement("sound-main");
+  };
+  const handleHoverLeave = () => {
+    setActiveElement(null);
+  };
+
+  const handleClick = () => {
+    const randomScale = Math.random() * (1.5 - 0.5) + 0.5; // generates a random number between 0.5 and 1.5
+    setScale(randomScale);
+  };
+
+  const handleMouseEnter = () => {
+    handleHover();
+
+    handleClick();
+  };
 
   return (
     <>
@@ -70,6 +91,47 @@ const DesignBanner = () => {
                       <div className="f-kanit">digitl design agency studio</div>
                     </p>
                   </div> */}
+                </div>
+                <div
+                  className={`sound-main ${
+                    activeElement === "sound-main" ? "hover-effect-sound" : ""
+                  }`}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleHoverLeave}
+                >
+                  <span
+                    className=" p-0 m-0  first-element  "
+                    style={{
+                      transform: `scale(${scale})`,
+                      animation: "1s linear infinite",
+                    }}
+                  >
+                    S
+                  </span>
+                  <span
+                    className=" p-0 m-0 sec-element"
+                    style={{ transform: `scale(${scale})` }}
+                  >
+                    O
+                  </span>
+                  <span
+                    className="p-0 m-0  third-element "
+                    style={{ transform: `scale(${scale})` }}
+                  >
+                    U
+                  </span>
+                  <span
+                    className=" p-0 m-0 fourth-element "
+                    style={{ transform: `scale(${scale})` }}
+                  >
+                    N
+                  </span>
+                  <span
+                    className=" p-0 m-0  fifth-element"
+                    style={{ transform: `scale(${scale})` }}
+                  >
+                    D
+                  </span>
                 </div>
 
                 <div className="arrow-section-main  ">
