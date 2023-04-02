@@ -1,3 +1,7 @@
+:root {
+  --fontHeight: 100;
+}
+
 .design-banner-main {
   background: var(--black);
 
@@ -394,6 +398,10 @@
   /* 
   animation: dancing 1s linear infinite;
   transform-origin: bottom; */
+
+  animation: dancing 4s ease 3s infinite;
+  transform-origin: bottom;
+  animation-duration: 5s;
 }
 
 .updown:hover {
@@ -402,78 +410,43 @@
   line-height: 1;
 }
 
-.sound-main {
-  position: relative;
-
-  height: 400px;
-}
-
-.sec-element {
-  line-height: 1;
-  color: aliceblue;
-  position: absolute;
-  display: inline-block;
-  /* translate: none; */
-  /* rotate: none; */
-  /* scale: none; */
-  /* opacity: 1; */
-  font-size: 290px;
-  bottom: 0;
-  left: 150px;
-
-  /* animation: second 1s linear infinite;
-  transform-origin: bottom; */
-}
-.third-element {
-  line-height: 1;
-  color: aliceblue;
-  position: absolute;
-  /* display: inline-block; */
-  font-size: 290px;
-  bottom: 0;
-  left: 360px;
-
-  /* animation: third 1s linear infinite;
-  transform-origin: bottom; */
-}
-.fourth-element {
-  line-height: 1;
-  color: aliceblue;
-  position: absolute;
-  /* display: inline-block; */
-  font-size: 290px;
-  bottom: 0;
-  left: 540px;
-  /* animation: fourth 1s linear infinite;
-  transform-origin: bottom; */
-}
-.fifth-element {
-  line-height: 1;
-  color: aliceblue;
-  position: absolute;
-  /* display: inline-block; */
-  font-size: 290px;
-  bottom: 0;
-  left: 720px;
-  /* animation: fifth 1s linear infinite;
-  transform-origin: bottom; */
-}
-
 @keyframes dancing {
   0% {
     transform: scaleY(1);
   }
+  10% {
+    transform: scaleY(0.5);
+  }
   20% {
+    transform: scaleY(0.4);
+  }
+
+  30% {
+    transform: scaleY(0.6);
+  }
+
+  40% {
+    transform: scaleY(0.8);
+  }
+
+  50% {
     transform: scaleY(1.2);
   }
-  40% {
+
+  60% {
     transform: scaleY(1.4);
   }
 
-  75% {
-    transform: scaleY(1.6);
+  70% {
+    transform: scaleY(1.2);
   }
 
+  80% {
+    transform: scaleY(1);
+  }
+  90% {
+    transform: scaleY(1.2);
+  }
   100% {
     transform: scaleY(1);
   }
@@ -481,61 +454,105 @@
 
 @keyframes second {
   0% {
+    transform: scaleY(1);
+  }
+  10% {
     transform: scaleY(0.8);
   }
   20% {
     transform: scaleY(1);
   }
-  40% {
+
+  30% {
     transform: scaleY(1.2);
   }
 
-  75% {
-    transform: scaleY(1.4);
+  40% {
+    transform: scaleY(1.3);
   }
 
+  50% {
+    transform: scaleY(1);
+  }
+
+  60% {
+    transform: scaleY(0.8);
+  }
+
+  70% {
+    transform: scaleY(1);
+  }
+
+  80% {
+    transform: scaleY(1.3);
+  }
+  90% {
+    transform: scaleY(1.5);
+  }
   100% {
-    transform: scaleY(1.6);
+    transform: scaleY(1);
   }
 }
 
 @keyframes third {
   0% {
+    transform: scaleY(1);
+  }
+  10% {
     transform: scaleY(1.3);
   }
   20% {
-    transform: scaleY(1.5);
-  }
-  40% {
-    transform: scaleY(1.7);
-  }
-
-  75% {
     transform: scaleY(1.4);
   }
 
+  30% {
+    transform: scaleY(1.2);
+  }
+
+  40% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0.8);
+  }
+
+  60% {
+    transform: scaleY(0.6);
+  }
+
+  70% {
+    transform: scaleY(0.8);
+  }
+
+  80% {
+    transform: scaleY(1);
+  }
+  90% {
+    transform: scaleY(1.4);
+  }
   100% {
-    transform: scaleY(1.3);
+    transform: scaleY(1);
   }
 }
 
 @keyframes fourth {
   0% {
-    transform: scaleY(1);
-  }
-  20% {
     transform: scaleY(0.9);
   }
-  40% {
+  20% {
     transform: scaleY(1.3);
+  }
+  40% {
+    transform: scaleY(1.6);
   }
 
   75% {
-    transform: scaleY(1.5);
+    transform: scaleY(1);
   }
 
   100% {
-    transform: scaleY(1.7);
+    transform: scaleY(0.9);
   }
 }
 
@@ -560,9 +577,94 @@
 }
 
 .hover-effect-sound {
-  /* animation: second 1s linear infinite;
-  animation: third 1s linear infinite;
-  animation: fourth 1s linear infinite;
-  animation: fifth 1s linear infinite; */
   transform-origin: bottom;
+}
+
+.work-section {
+  font-size: 15rem;
+  font-weight: 500;
+  letter-spacing: 15px;
+  height: 300px;
+
+  position: relative;
+}
+
+.one {
+  line-height: 1;
+  color: aliceblue;
+  position: relative;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+
+  transform-origin: bottom;
+
+  line-height: 1;
+}
+
+.two {
+  line-height: 1;
+  color: aliceblue;
+  position: relative;
+  display: inline-block;
+
+  transform-origin: bottom;
+  line-height: 1;
+}
+
+.three {
+  line-height: 1;
+  color: aliceblue;
+
+  position: relative;
+  display: inline-block;
+  bottom: 0;
+}
+
+.four {
+  line-height: 1;
+  color: aliceblue;
+
+  position: relative;
+  display: inline-block;
+  bottom: 0;
+}
+
+.five {
+  line-height: 1;
+  color: aliceblue;
+
+  position: relative;
+  display: inline-block;
+  bottom: 0;
+}
+
+.six {
+  line-height: 1;
+  color: aliceblue;
+
+  position: relative;
+  display: inline-block;
+  bottom: 0;
+}
+
+.first-text-anim {
+  animation: dancing 3s linear infinite;
+  transform-origin: bottom;
+  animation-duration: 7s;
+  line-height: 1;
+}
+
+.second-text-anim {
+  animation: second 2s linear infinite;
+  animation-duration: 7s;
+  transform-origin: bottom;
+  line-height: 1;
+}
+
+.third-text-anim {
+  animation: third 2s linear infinite;
+  animation-duration: 7s;
+  transform-origin: bottom;
+  line-height: 1;
 }

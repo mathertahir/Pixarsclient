@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Tusker Grotesk';
+    src: local('Tusker Grotesk 2700 Bold'), local('Tusker-Grotesk-2700-Bold'),
+        url('TuskerGrotesk-2700Bold.woff2') format('woff2'),
+        url('TuskerGrotesk-2700Bold.woff') format('woff'),
+        url('TuskerGrotesk-2700Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

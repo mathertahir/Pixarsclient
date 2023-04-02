@@ -9,6 +9,7 @@ const DesignBanner = () => {
   // const parentRef = useRef(null);
   // const random = useRef(null);
   const elementRef = useRef(null);
+  const [randomValue, setRandomValue] = useState(0);
 
   const [activeElement, setActiveElement] = useState(null);
   const [scale, setScale] = useState(1);
@@ -35,23 +36,15 @@ const DesignBanner = () => {
     }
   }
 
-  const handleHover = () => {
-    setActiveElement("sound-main");
-  };
-  const handleHoverLeave = () => {
-    setActiveElement(null);
-  };
+  const [isHovered, setIsHovered] = useState(false);
 
-  const handleClick = () => {
-    const randomScale = Math.random() * (1.5 - 0.5) + 0.5; // generates a random number between 0.5 and 1.5
-    setScale(randomScale);
-  };
+  function handleMouseEnter() {
+    setIsHovered(true);
+  }
 
-  const handleMouseEnter = () => {
-    handleHover();
-
-    handleClick();
-  };
+  function handleMouseLeave() {
+    setIsHovered(false);
+  }
 
   return (
     <>
@@ -85,52 +78,40 @@ const DesignBanner = () => {
                       </div>
                     </p>
                   </h2>
-
-                  {/* <div className="">
-                    <p className="title-subheading cl-white">
-                      <div className="f-kanit">digitl design agency studio</div>
-                    </p>
-                  </div> */}
                 </div>
+
                 <div
-                  className={`sound-main ${
-                    activeElement === "sound-main" ? "hover-effect-sound" : ""
-                  }`}
+                  className="work-section   f-tusker cl-white  text-center  "
                   onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleHoverLeave}
+                  onMouseLeave={handleMouseLeave}
                 >
-                  <span
-                    className=" p-0 m-0  first-element  "
-                    style={{
-                      transform: `scale(${scale})`,
-                      animation: "1s linear infinite",
-                    }}
-                  >
+                  <span className={`one ${isHovered ? "first-text-anim" : ""}`}>
                     S
                   </span>
                   <span
-                    className=" p-0 m-0 sec-element"
-                    style={{ transform: `scale(${scale})` }}
+                    className={`two ${isHovered ? "second-text-anim" : ""}`}
                   >
                     O
                   </span>
                   <span
-                    className="p-0 m-0  third-element "
-                    style={{ transform: `scale(${scale})` }}
+                    className={`three ${isHovered ? "third-text-anim" : ""}`}
                   >
                     U
                   </span>
                   <span
-                    className=" p-0 m-0 fourth-element "
-                    style={{ transform: `scale(${scale})` }}
+                    className={`four ${isHovered ? "first-text-anim" : ""}`}
                   >
                     N
                   </span>
                   <span
-                    className=" p-0 m-0  fifth-element"
-                    style={{ transform: `scale(${scale})` }}
+                    className={`five ${isHovered ? "third-text-anim" : ""}`}
                   >
                     D
+                  </span>
+                  <span
+                    className={`six ${isHovered ? "second-text-anim" : ""}`}
+                  >
+                    S
                   </span>
                 </div>
 
