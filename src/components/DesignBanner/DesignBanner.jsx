@@ -89,7 +89,7 @@ const DesignBanner = () => {
                     S
                   </span>
                   <span
-                    className={`two ${isHovered ? "second-text-anim" : ""}`}
+                    className={`two ${isHovered ? "    second-text-anim" : ""}`}
                   >
                     O
                   </span>
@@ -99,18 +99,16 @@ const DesignBanner = () => {
                     U
                   </span>
                   <span
-                    className={`four ${isHovered ? "first-text-anim" : ""}`}
+                    className={`four ${isHovered ? "fourth-text-anim" : ""}`}
                   >
                     N
                   </span>
                   <span
-                    className={`five ${isHovered ? "third-text-anim" : ""}`}
+                    className={`five ${isHovered ? "first-text-anim" : ""}`}
                   >
                     D
                   </span>
-                  <span
-                    className={`six ${isHovered ? "second-text-anim" : ""}`}
-                  >
+                  <span className={`six ${isHovered ? "third-text-anim" : ""}`}>
                     S
                   </span>
                 </div>
