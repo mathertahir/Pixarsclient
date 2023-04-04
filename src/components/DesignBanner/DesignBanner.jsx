@@ -36,15 +36,32 @@ const DesignBanner = () => {
     }
   }
 
-  const [isHovered, setIsHovered] = useState(false);
+  const [randomHeights, setRandomHeights] = useState([]);
+  const [randomHeightsIntervalId, setRandomHeightsIntervalId] = useState(null);
 
-  function handleMouseEnter() {
-    setIsHovered(true);
-  }
+  const handleHover = () => {
+    const intervalId = setInterval(() => {
+      const heights = [];
+      for (let i = 0; i < 5; i++) {
+        const randomVal = Math.floor(Math.random() * 100) + 1;
+        heights.push(randomVal);
+      }
+      setRandomHeights(heights);
+    }, 800);
 
-  function handleMouseLeave() {
-    setIsHovered(false);
-  }
+    setRandomHeightsIntervalId(intervalId);
+  };
+
+  const handleMouseLeave = () => {
+    clearInterval(randomHeightsIntervalId);
+    setRandomHeights([]);
+  };
+
+  useEffect(() => {
+    return () => {
+      clearInterval(randomHeightsIntervalId);
+    };
+  }, []);
   // const [hovered, setHovered] = useState(false);
 
   // const handleHover = () => {
@@ -98,7 +115,7 @@ const DesignBanner = () => {
                   </h2>
                 </div>
 
-                <div
+                {/* <div
                   className="work-section   f-tusker cl-white  text-center  "
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
@@ -129,11 +146,27 @@ const DesignBanner = () => {
                   <span className={`six ${isHovered ? "third-text-anim" : ""}`}>
                     S
                   </span>
-                </div>
+                </div> */}
 
-                <h1 className="f-tusker-varient    cl-white  fs-110   vari">
-                  S
-                </h1>
+                <div
+                  className="variant-animation cl-white f-tusker-varient"
+                  onMouseEnter={handleHover}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {"FIELD".split("").map((letter, index) => (
+                    <span
+                      key={index}
+                      style={{
+                        fontVariationSettings: `"hght" ${
+                          randomHeights[index] || 100
+                        }, "wdth" 1.5`,
+                      }}
+                      className="animate-span"
+                    >
+                      {letter}
+                    </span>
+                  ))}
+                </div>
 
                 {/* <div
                   className="sound-text-main  text-center cl-white fs-110 "

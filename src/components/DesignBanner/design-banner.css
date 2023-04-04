@@ -662,3 +662,17 @@
     transition: transform 400ms ease-in-out;
   }
 }
+
+/* Tusker Animation */
+
+.variant-animation {
+  font-size: 15rem;
+  font-weight: 500;
+  font-variation-settings: "hght" var(--fontHeight), "wdth" 1.5;
+  letter-spacing: 10px;
+  transition: 0.3s all;
+}
+
+.animate-span {
+  transition: 0.3s all;
+}
