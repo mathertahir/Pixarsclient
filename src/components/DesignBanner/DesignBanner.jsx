@@ -45,6 +45,24 @@ const DesignBanner = () => {
   function handleMouseLeave() {
     setIsHovered(false);
   }
+  // const [hovered, setHovered] = useState(false);
+
+  // const handleHover = () => {
+  //   setHovered(true);
+  // };
+
+  // const handleLeave = () => {
+  //   setHovered(false);
+  // };
+
+  // const text = "SOUNDS";
+
+  // const generateRandomProps = () => {
+  //   return {
+  //     "--random-translateY-from": Math.random(),
+  //     "--random-opacity-from": Math.random(),
+  //   };
+  // };
 
   return (
     <>
@@ -86,22 +104,22 @@ const DesignBanner = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <span className={`one ${isHovered ? "first-text-anim" : ""}`}>
-                    S
+                    F
                   </span>
                   <span
                     className={`two ${isHovered ? "    second-text-anim" : ""}`}
                   >
-                    O
+                    I
                   </span>
                   <span
                     className={`three ${isHovered ? "third-text-anim" : ""}`}
                   >
-                    U
+                    E
                   </span>
                   <span
                     className={`four ${isHovered ? "fourth-text-anim" : ""}`}
                   >
-                    N
+                    L
                   </span>
                   <span
                     className={`five ${isHovered ? "first-text-anim" : ""}`}
@@ -112,6 +130,30 @@ const DesignBanner = () => {
                     S
                   </span>
                 </div>
+
+                <h1 className="f-tusker-varient    cl-white  fs-110   vari">
+                  S
+                </h1>
+
+                {/* <div
+                  className="sound-text-main  text-center cl-white fs-110 "
+                  onMouseEnter={handleHover}
+                  onMouseLeave={handleLeave}
+                >
+                  {hovered
+                    ? text.split("").map((letter, index) => (
+                        <span
+                          className="sound-text-letter"
+                          key={index}
+                          style={{
+                            ...generateRandomProps(),
+                          }}
+                        >
+                          {letter}
+                        </span>
+                      ))
+                    : text}
+                </div> */}
 
                 <div className="arrow-section-main  ">
                   <div>

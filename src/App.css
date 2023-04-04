@@ -96,6 +96,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "TuskerVarient";
+  src: url(../public/varienttusker/TuskerStretch-VFVF.3fe88ade.woff2)
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 .f-kanit {
   font-family: "kanit";
 }
@@ -103,6 +111,9 @@
   font-family: "Tusker";
 }
 
+.f-tusker-varient {
+  font-family: "TuskerVarient";
+}
 .fs-50 {
   font-size: 50px;
 }
