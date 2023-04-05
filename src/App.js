@@ -12,6 +12,7 @@ import SolutionSection from "./components/SolutionSection/SolutionSection";
 import FooterSection from "./components/Footer/FooterSection";
 import { useState, useEffect } from "react";
 import gsap from "gsap";
+import Portfolio from "./components/Portfolio/Portfolio";
 const App = () => {
   useEffect(() => {
     const mouseCursor = document.querySelector(".cursor1");
@@ -90,6 +91,8 @@ const App = () => {
       <DesignBanner />
       <SwiperSlider />
       <SolutionSection />
+
+      <Portfolio />
       <FooterSection />
     </div>
   );

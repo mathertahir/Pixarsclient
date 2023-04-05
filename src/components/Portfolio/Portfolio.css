@@ -1,0 +1,137 @@
+@keyframes leftmarquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.LinksMarquee {
+  width: 100vw;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* .link-content {
+  display: flex;
+  animation: leftmarquee 15s linear infinite running;
+} */
+
+.links-wrapper {
+  /* animation-duration: 10s; */
+  display: flex;
+  animation: leftmarquee 10s linear infinite;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.link-tag {
+  font-size: 160px;
+
+  /* height: 300px; */
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 10s ease;
+  /* padding: 60px; */
+
+  font-variation-settings: "hght" 1, "wdth" 1;
+}
+.first-element {
+  margin-left: 100px;
+}
+/* .link-content:hover {
+  animation-play-state: paused;
+} */
+.mid-elements {
+  /* margin: 0px 100px !important; */
+}
+.portfolio-main {
+  background-image: url(../../../public/images/view2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .element-tag:hover .portfolio-main {
+  background-image: url(../../../public/images/birds.jpg);
+  cursor: pointer;
+} */
+
+.link-content .element-tag:hover:hover ~ .portfolio-main {
+  background-image: url(../../../public/images/birds.jpg);
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.portfolio-tags {
+  font-size: 160px;
+
+  height: 300px;
+  /* white-space: nowrap; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 2s ease;
+  /* padding: 60px; */
+  /* margin: 40px; */
+  padding: 0 55px;
+  font-variation-settings: "hght" 1, "wdth" 1;
+}
+
+.portfolio-tags:hover {
+  color: red !important;
+}
+.links-wrapper:hover {
+  animation-play-state: paused;
+}
+
+.tag1:hover ~ .portfolio-main {
+  background-image: url(../../../public/images/birds.jpg);
+}
+
+.scroll {
+  height: 60vh;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-marquee {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.text-single {
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  will-change: transform;
+}
+
+.text {
+  padding: 0;
+  font-size: 6.4rem;
+  display: inline-block;
+  margin-right: 2rem;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.second-data {
+  padding-left: 0;
+}
+
+/* .tag-mather {
+  margin-right: 30px;
+} */

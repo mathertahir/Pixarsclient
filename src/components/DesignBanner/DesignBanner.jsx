@@ -47,7 +47,7 @@ const DesignBanner = () => {
         heights.push(randomVal);
       }
       setRandomHeights(heights);
-    }, 800);
+    }, 500);
 
     setRandomHeightsIntervalId(intervalId);
   };
@@ -167,26 +167,6 @@ const DesignBanner = () => {
                     </span>
                   ))}
                 </div>
-
-                {/* <div
-                  className="sound-text-main  text-center cl-white fs-110 "
-                  onMouseEnter={handleHover}
-                  onMouseLeave={handleLeave}
-                >
-                  {hovered
-                    ? text.split("").map((letter, index) => (
-                        <span
-                          className="sound-text-letter"
-                          key={index}
-                          style={{
-                            ...generateRandomProps(),
-                          }}
-                        >
-                          {letter}
-                        </span>
-                      ))
-                    : text}
-                </div> */}
 
                 <div className="arrow-section-main  ">
                   <div>

@@ -676,3 +676,9 @@
 .animate-span {
   transition: 0.3s all;
 }
+
+.portfolio-main {
+  background-image: url(../../../public/images/view2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
