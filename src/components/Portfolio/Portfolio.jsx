@@ -1,128 +1,123 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import "./Portfolio.css";
-import { useEffect, useRef } from "react";
+
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import Draggable from "gsap/Draggable";
 
 const Portfolio = () => {
+  const [backgroundImage, setBackgroundImage] = useState("images/view2.jpg");
+  const handleLinkHover = (image) => {
+    setBackgroundImage(image);
+  };
+
+  const handleLetterHover = (event) => {
+    const target = event.target;
+    const siblings = Array.from(target.parentElement.children);
+
+    // Add different styles to the hover letter and its siblings
+    siblings.forEach((sibling) => {
+      if (sibling === target) {
+        sibling.style.fontVariationSettings = "  'hght' 40, 'wdth' 1";
+      } else if (siblings.indexOf(target) + 1 === siblings.indexOf(sibling)) {
+        sibling.style.fontVariationSettings = "  'hght' 35, 'wdth' 1";
+      } else if (siblings.indexOf(target) + 2 === siblings.indexOf(sibling)) {
+        sibling.style.fontVariationSettings = "  'hght' 30, 'wdth' 1";
+      } else if (siblings.indexOf(target) + 3 === siblings.indexOf(sibling)) {
+        sibling.style.fontVariationSettings = "  'hght' 25, 'wdth' 1";
+      } else if (siblings.indexOf(target) - 1 === siblings.indexOf(sibling)) {
+        sibling.style.fontVariationSettings = "  'hght' 35, 'wdth' 1";
+      } else if (siblings.indexOf(target) - 2 === siblings.indexOf(sibling)) {
+        sibling.style.fontVariationSettings = "  'hght' 30, 'wdth' 1";
+      } else if (siblings.indexOf(target) - 3 === siblings.indexOf(sibling)) {
+        sibling.style.fontVariationSettings = "  'hght' 25, 'wdth' 1";
+      } else {
+        sibling.style.fontVariationSettings = "  'hght' 1, 'wdth' 1";
+      }
+    });
+  };
+
+  const handleLetterLeave = (event) => {
+    const siblings = Array.from(event.target.parentElement.children);
+
+    // Reset the styles of all the letters
+    siblings.forEach((sibling) => {
+      sibling.style.fontVariationSettings = "  'hght' 1, 'wdth 1";
+    });
+  };
+
   return (
-    <div className="portfolio-main">
-      {/* <div className="  overflow-hidden  ">
-        <div class="LinksMarquee mx-0 overflow-hidden ">
-          <div class="link-content">
-            <div class="link-tag   fw-400 cl-white  text-center  text-uppercase    f-tusker-varient       ">
-              {" "}
-              World Economic Fourm
-            </div>
-            <div class="link-tag   fw-400 cl-white   text-center  text-uppercase  f-tusker-varient">
-              {" "}
-              Digital Solution
-            </div>
-            <div class="link-tag   fw-400 cl-white   text-center  text-uppercase  f-tusker-varient">
-              {" "}
-              Strategy
-            </div>
-            <div class="link-tag   fw-400 cl-white   text-center  text-uppercase f-tusker-varient">
-              {" "}
-              Branding
-            </div>
-            <div class="link-tag   fw-400 cl-white   text-center  text-uppercase f-tusker-varient">
-              {" "}
-              Agency
-            </div>
-
-            <div class="link-tag   fw-400 cl-white   text-center  text-uppercase f-tusker-varient">
-              {" "}
-              Element
-            </div>
-            <div class="link-tag   fw-400 cl-white   text-center  text-uppercase f-tusker-varient">
-              {" "}
-              Digital Solution
-            </div>
-            <div class="link-tag   fw-400 cl-white   text-center  text-uppercase  f-tusker-varient">
-              {" "}
-              Strategy
-            </div>
-            <div class="link-tag   fw-400 cl-white   text-center  text-uppercase  f-tusker-varient">
-              {" "}
-              Branding
-            </div>
-            <div class="link-tag   fw-400 cl-white   text-center  text-uppercase f-tusker-varient">
-              {" "}
-              Agency
-            </div>
+    <div
+      className="portfolio-main   d-flex align-items-end"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      <Marquee pauseOnHover={true} speed={400} gradientWidth={0}>
+        <div class="marquee__inner   d-flex" aria-hidden="true">
+          <div
+            className="f-tusker-varient  cl-white  mylinks p-5"
+            onMouseEnter={() => {
+              handleLinkHover("images/wars.png");
+            }}
+            // onMouseLeave={() => handleLinkHover("images/view2.jpg")}
+          >
+            {"Legend Of Galaxy".split("").map((char, index) => (
+              <span
+                key={index}
+                onMouseEnter={handleLetterHover}
+                onMouseLeave={handleLetterLeave}
+                className="childletter"
+              >
+                {char}
+              </span>
+            ))}
+          </div>
+          <div
+            className="f-tusker-varient cl-white mylinks  p-5"
+            onMouseEnter={() => handleLinkHover("images/worldfourm.png")}
+          >
+            {"World Economic Fourm".split("").map((char, index) => (
+              <span
+                key={index}
+                onMouseEnter={handleLetterHover}
+                onMouseLeave={handleLetterLeave}
+                className="childletter"
+              >
+                {char}
+              </span>
+            ))}
+          </div>
+          <div
+            className="f-tusker-varient cl-white  mylinks p-5"
+            onMouseEnter={() => handleLinkHover("images/margotcommunity.png")}
+          >
+            {"Margot Community".split("").map((char, index) => (
+              <span
+                key={index}
+                onMouseEnter={handleLetterHover}
+                onMouseLeave={handleLetterLeave}
+                className="childletter"
+              >
+                {char}
+              </span>
+            ))}
+          </div>
+          <div
+            className="f-tusker-varient  cl-white  mylinks p-5"
+            onMouseEnter={() => handleLinkHover("images/hyprovebanner.png")}
+          >
+            {"Hyprov".split("").map((char, index) => (
+              <span
+                key={index}
+                onMouseEnter={handleLetterHover}
+                onMouseLeave={handleLetterLeave}
+                className="childletter"
+              >
+                {char}
+              </span>
+            ))}
           </div>
         </div>
-      </div> */}
-
-      <div className="  overflow-hidden ">
-        <div class=" mx-0 overflow-hidden ">
-          <div class="   links-wrapper">
-            <div class="  fw-400 cl-white   text-center  text-uppercase  portfolio-tags   tag1  f-tusker-varient     ">
-              {" "}
-              FIRST
-            </div>
-            <div class="  fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags    f-tusker-varient  ">
-              {" "}
-              SECOND
-            </div>
-            <div class="  fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags   f-tusker-varient tag-mather  ">
-              {" "}
-              THIRD
-            </div>
-            <div class="    fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags   f-tusker-varient tag-mather  ">
-              {" "}
-              FORTH
-            </div>
-
-            <div class="   fw-400 cl-white   text-center  text-uppercase  portfolio-tags   tag1  f-tusker-varient  ">
-              {" "}
-              FIRST
-            </div>
-            <div class="    fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags    f-tusker-varient ">
-              {" "}
-              SECOND
-            </div>
-            <div class="  fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags   f-tusker-varient  tag-mather  ">
-              {" "}
-              THIRD
-            </div>
-            <div class="   fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags   f-tusker-varient  tag-mather   ">
-              {" "}
-              FOURTH
-            </div>
-            {/* <div class="   fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags   f-tusker-varient  ">
-              {" "}
-              Branding
-            </div>
-            <div class="   fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags  f-tusker-varient  ">
-              {" "}
-              Agency
-            </div>
-
-            <div class="   fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags   f-tusker-varient  second-data ">
-              {" "}
-              Usman
-            </div>
-            <div class="   fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags  f-tusker-varient  ">
-              {" "}
-              Digital Solution
-            </div>
-            <div class="   fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags  f-tusker-varient  ">
-              {" "}
-              Strategy
-            </div>
-            <div class="   fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags  f-tusker-varient  ">
-              {" "}
-              Branding
-            </div>
-            <div class="   fw-400 cl-white  f-kanit text-center  text-uppercase portfolio-tags   f-tusker-varient  ">
-              {" "}
-              Agency
-            </div> */}
-          </div>
-        </div>
-      </div>
+      </Marquee>
     </div>
   );
 };
