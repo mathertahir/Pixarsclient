@@ -118,6 +118,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+  }
+
+  .shape {
+    padding: 20px;
   }
 }
 .anima-text {
@@ -144,8 +149,14 @@
   opacity: 1;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
-  .about-main-title {
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+  .about-maintitle {
     padding-left: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .about-maintitle {
+    padding: 0px !important;
   }
 }

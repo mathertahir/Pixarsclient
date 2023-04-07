@@ -58,13 +58,13 @@ const SolutionSection = () => {
               <img
                 src="images/wrap1.png"
                 className={`transit-images ${
-                  activeElement === "transit-images" ? "active" : ""
+                  activeElement === "transit-images" ? "activeimages" : ""
                 }`}
               />{" "}
               <img
                 src="images/4-2.png"
                 className={`seo-image ${
-                  activeElement === "seo-image" ? "active" : ""
+                  activeElement === "seo-image" ? "activeimages" : ""
                 }`}
               />{" "}
               <span className="badge-screen  "></span>

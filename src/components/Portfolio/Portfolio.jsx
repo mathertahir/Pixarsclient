@@ -18,19 +18,19 @@ const Portfolio = () => {
     // Add different styles to the hover letter and its siblings
     siblings.forEach((sibling) => {
       if (sibling === target) {
-        sibling.style.fontVariationSettings = "  'hght' 40, 'wdth' 1";
+        sibling.style.fontVariationSettings = "  'hght' 90, 'wdth' 1";
       } else if (siblings.indexOf(target) + 1 === siblings.indexOf(sibling)) {
-        sibling.style.fontVariationSettings = "  'hght' 35, 'wdth' 1";
+        sibling.style.fontVariationSettings = "  'hght' 70, 'wdth' 1";
       } else if (siblings.indexOf(target) + 2 === siblings.indexOf(sibling)) {
-        sibling.style.fontVariationSettings = "  'hght' 30, 'wdth' 1";
+        sibling.style.fontVariationSettings = "  'hght' 50  , 'wdth' 1";
       } else if (siblings.indexOf(target) + 3 === siblings.indexOf(sibling)) {
-        sibling.style.fontVariationSettings = "  'hght' 25, 'wdth' 1";
+        sibling.style.fontVariationSettings = "  'hght' 40, 'wdth' 1";
       } else if (siblings.indexOf(target) - 1 === siblings.indexOf(sibling)) {
-        sibling.style.fontVariationSettings = "  'hght' 35, 'wdth' 1";
+        sibling.style.fontVariationSettings = "  'hght' 70, 'wdth' 1";
       } else if (siblings.indexOf(target) - 2 === siblings.indexOf(sibling)) {
-        sibling.style.fontVariationSettings = "  'hght' 30, 'wdth' 1";
+        sibling.style.fontVariationSettings = "  'hght' 50, 'wdth' 1";
       } else if (siblings.indexOf(target) - 3 === siblings.indexOf(sibling)) {
-        sibling.style.fontVariationSettings = "  'hght' 25, 'wdth' 1";
+        sibling.style.fontVariationSettings = "  'hght' 40, 'wdth' 1";
       } else {
         sibling.style.fontVariationSettings = "  'hght' 1, 'wdth' 1";
       }
@@ -42,7 +42,7 @@ const Portfolio = () => {
 
     // Reset the styles of all the letters
     siblings.forEach((sibling) => {
-      sibling.style.fontVariationSettings = "  'hght' 1, 'wdth 1";
+      sibling.style.fontVariationSettings = " 'hght' 1, 'wdth' 1";
     });
   };
 
@@ -51,7 +51,7 @@ const Portfolio = () => {
       className="portfolio-main   d-flex align-items-end"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <Marquee pauseOnHover={true} speed={400} gradientWidth={0}>
+      <Marquee pauseOnHover={true} speed={200} gradientWidth={0}>
         <div class="marquee__inner   d-flex" aria-hidden="true">
           <div
             className="f-tusker-varient  cl-white  mylinks p-5"

@@ -444,7 +444,7 @@
   position: absolute;
 }
 
-.active {
+.activeimages {
   transform: rotate(15deg) translateX(60px) translateY(30px);
   opacity: 1;
   display: visible;

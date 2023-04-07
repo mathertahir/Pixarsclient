@@ -666,7 +666,7 @@
 /* Tusker Animation */
 
 .variant-animation {
-  font-size: 15rem;
+  font-size: clamp(6rem, -5.25rem + 36vw, 15rem);
   font-weight: 500;
   font-variation-settings: "hght" var(--fontHeight), "wdth" 1.5;
   letter-spacing: 10px;

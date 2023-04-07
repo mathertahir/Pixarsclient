@@ -13,6 +13,7 @@ import FooterSection from "./components/Footer/FooterSection";
 import { useState, useEffect } from "react";
 import gsap from "gsap";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Manager from "./components/ManagerSection/Manager";
 const App = () => {
   useEffect(() => {
     const mouseCursor = document.querySelector(".cursor1");
@@ -93,6 +94,7 @@ const App = () => {
       <SolutionSection />
 
       <Portfolio />
+      <Manager />
       <FooterSection />
     </div>
   );
