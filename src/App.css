@@ -88,6 +88,15 @@
   font-family: "kanit";
   src: url(../public/kanitfont/Kanit-Regular.ttf);
 }
+
+
+@font-face {
+  font-family: "tusker";
+  src: url(../public/tuskerfonts/TuskerGrotesk-5700Bold.ttf);
+}
+
+
+
 .f-kanit {
   font-family: "kanit";
 }
