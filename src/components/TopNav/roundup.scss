@@ -1,0 +1,25 @@
+.letter-wrap * {
+  pointer-events: none;
+}
+
+.letter-wrap__word {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.letter-wrap__char {
+  display: flex;
+  position: relative;
+  text-transform: uppercase;
+}
+.letter-wrap__char-inner {
+  display: inline-flex;
+}
+.letter-wrap__char-inner:after {
+  content: attr(data-letter);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: var(--secondary-clr);
+}

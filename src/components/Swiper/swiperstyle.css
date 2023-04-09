@@ -12,9 +12,28 @@
   padding: 31px 10px;
 }
 
+.about-left-img {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.left-image-section {
+  background-image: url("../../../public/images/about-left.png");
+  background-size: contain;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vw;
+  position: absolute;
+  top: 0;
+  width: 150vw;
+}
+
 .about-area {
   background-color: var(--black2);
 }
+
 .about-maintitle {
   padding-left: 190px;
   padding-bottom: 60px;
@@ -43,8 +62,9 @@
 
 .about-description {
   padding-top: 65px;
-}
-.about-description p {
+  perspective: 400;
+  z-index: 9;
+  position: relative;
 }
 
 @media (max-width: 760px) {
@@ -98,6 +118,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+  }
+
+  .shape {
+    padding: 20px;
   }
 }
 .anima-text {
@@ -124,8 +149,14 @@
   opacity: 1;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
-  .about-main-title {
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+  .about-maintitle {
     padding-left: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .about-maintitle {
+    padding: 0px !important;
   }
 }

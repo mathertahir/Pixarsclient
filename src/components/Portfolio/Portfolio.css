@@ -1,0 +1,38 @@
+.portfolio-main {
+  /* background-image: url(../../../public/images/view2.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  padding-bottom: 10px;
+}
+
+/* 
+.marqueemain span {
+  font-size: 160px;
+  font-variation-settings: "hght" 1, "wdth" 1;
+  padding: 0 2vw;
+  transition: all 2s ease;
+} */
+
+.marquee__inner {
+  overflow: hidden;
+  vertical-align: text-bottom;
+}
+
+.mylinks {
+  text-transform: uppercase;
+  font-variation-settings: "hght" 1, "wdth" 1;
+  font-size: 220px !important;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.mylinks:hover {
+  color: #fb5eff !important;
+}
+
+.childletter {
+  line-height: 1;
+  transition: all 0.6s;
+  font-size: 180px !important;
+}

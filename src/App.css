@@ -7,9 +7,9 @@
   --secondary: #2c2c2c;
   --primary: #c9f31d;
   --gray2: #999;
-  --white3:#e9e9e9;
-  --white4:#f0f0f0;
-  --black5:#171717;
+  --white3: #e9e9e9;
+  --white4: #f0f0f0;
+  --black5: #171717;
 }
 
 .App {
@@ -89,16 +89,30 @@
   src: url(../public/kanitfont/Kanit-Regular.ttf);
 }
 
-
 @font-face {
-  font-family: "tusker";
-  src: url(../public/tuskerfonts/TuskerGrotesk-5700Bold.ttf);
+  font-family: "Tusker";
+  src: url(../public/tuskerfont/TuskerGrotesk-3700Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
-
+@font-face {
+  font-family: "TuskerVarient";
+  src: url(../public/varienttusker/TuskerStretch-VFVF.3fe88ade.woff2)
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 
 .f-kanit {
   font-family: "kanit";
+}
+.f-tusker {
+  font-family: "Tusker";
+}
+
+.f-tusker-varient {
+  font-family: "TuskerVarient";
 }
 .fs-50 {
   font-size: 50px;
@@ -125,55 +139,139 @@
   padding: 40px;
 }
 
-.fs-20{
+.fs-20 {
   font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
 }
 
-.fs-28{
+.fs-28 {
   font-size: 28px;
 }
-.fs-48{
+.fs-48 {
   font-size: 40px;
 }
 
-.pt-130{
+.pt-130 {
   padding-top: 130px;
   padding-bottom: 110px;
 }
 
-.pb-60{
+.pb-60 {
   padding-bottom: 60px;
 }
-.fs-14{
+.fs-14 {
   font-size: 14px;
 }
 
-.pt-150{
+.pt-150 {
   padding-top: 150px;
 }
-.pb-110{
+.pb-110 {
   padding-bottom: 110px;
 }
 
-.fw-600{
+.fw-600 {
   font-weight: 600;
 }
 
-
-.mb-12{
+.mb-12 {
   margin-bottom: 12px;
 }
 
-.fs-36{
- font-size: 36px;  
+.fs-36 {
+  font-size: 36px;
 }
 
-.pb-150{
+.pb-150 {
   padding-bottom: 150px;
 }
 
-.pt-150{
+.pt-150 {
   padding-top: 150px;
 }
 
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  opacity: 0;
+  transition: opacity 0.2s ease-out-quart;
+  pointer-events: none;
+  transform-origin: 100% 100%;
+  mix-blend-mode: difference;
+}
 
+.cursor1 {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
+.cursor2 {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
+.cursor-move-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+.cursor-move-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cursor-inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 50%;
+  transition: transform 0.4s ease-out-quint, opacity 0.4s ease-out-quart;
+}
+
+.cursor-outer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(#fff, 0.75);
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: border 0.4s ease-out-quart, transform 0.4s ease-out-quint,
+    opacity 0.4s ease-out-quart;
+}

@@ -10,16 +10,18 @@ const FooterSection = () => {
       <div className="footer-top   ">
         <Row className="mx-0 ">
           <Col className="px-0    ">
-            <div className="footer-pic">
-              <img src="images/footer.jpg" className="footer-image "></img>
+            <div className="footer-pic-container">
+              <div className="footer-pic">
+                {/* <img src="images/footer.jpg" className="footer-image "></img> */}
+              </div>
             </div>
           </Col>
         </Row>
       </div>
 
-      <div className="footer-inner-main">
+      <div className="footer-inner-main  ">
         <div className="footer-inner ">
-          <div className="w-120  container-fluid ">
+          <div className="w-120   container-fluid">
             <Row className="">
               <Col
                 xl={4}

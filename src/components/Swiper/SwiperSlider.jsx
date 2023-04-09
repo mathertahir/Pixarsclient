@@ -1,6 +1,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useState, useEffect } from "react";
 
 import "./swiperstyle.css";
 import { Container } from "react-bootstrap";
@@ -32,13 +33,55 @@ const SwiperSlider = () => {
               {" "}
               Agency
             </div>
+
+            <div class="Marquee-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Element
+            </div>
+            <div class="Marquee-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Digital Solution
+            </div>
+            <div class="Marquee-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Strategy
+            </div>
+            <div class="Marquee-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Branding
+            </div>
+            <div class="Marquee-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Agency
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="swiper-2  overflow-hidden ">
-        <div class="Marquee-right  mx-0 overflow-hidden ">
-          <div class="Marquee-right-content">
+      <div className="swiper-2  overflow-hidden position-relative ">
+        <div class="marqueeright  mx-0 overflow-hidden ">
+          <div class="marquee-right-content">
+            <div class="Marquee-right-tag  fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Element
+            </div>
+            <div class="Marquee-right-tag  fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Digital Solution
+            </div>
+            <div class="Marquee-right-tag  fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Strategy
+            </div>
+            <div class="Marquee-right-tag  fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Branding
+            </div>
+            <div class="Marquee-right-tag   fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
+              {" "}
+              Agency
+            </div>
+
             <div class="Marquee-right-tag  fw-400 cl-white fs-26 f-kanit text-center  text-uppercase">
               {" "}
               Element
@@ -91,48 +134,49 @@ const SwiperSlider = () => {
             </Col>
           </Row>
 
-          <Row className="align-items-center  gx-5 mx-0">
-            <Col md={4} sm={12} className="">
-              <div className="about-left-img  ">
-                <img src="images/about-left.png  " className="w-100"></img>
+          <Row className="  gx-5 mx-0">
+            <Col md={4} sm={12} className="align-items-center">
+              <div className="parallax-container">
+                {" "}
+                <div className="about-left-img  ">
+                  <div className="left-image-section"></div>
+                </div>
               </div>
             </Col>
             <Col md={8} className="p-40">
               <Row className="mx-0 flex-md-column-reverse   flex-lg-row">
                 <Col md={9} sm={12}>
                   <div className="about-description p-30  ">
-                    <p className="">
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit    first">
-                        At Pixarsart our aim is to create the most effective{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  second">
-                        online presence for your brand. We use the latest{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit   third">
-                        technology to provide you with the most intuitive{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit   fourth">
-                        solutions to cater to all your business needs. We want{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  fifth">
-                        are committed to providing creative and innovative{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  sixth">
-                        Backend Development, Digital Product Development,{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  seventh">
-                        Server Management, Continuous Integration and{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  eighth">
-                        eCommerce solutions. We are progressively working{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  ninth">
-                        with clients with legacy systems as well as progressive{" "}
-                      </div>
-                      <div className="fs-18 cl-gray2 fw-400 f-kanit  tenth">
-                        technologies includingVR and AR.{" "}
-                      </div>
-                    </p>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit    first">
+                      At Pixarsart our aim is to create the most effective{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  second">
+                      online presence for your brand. We use the latest{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit   third">
+                      technology to provide you with the most intuitive{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit   fourth">
+                      solutions to cater to all your business needs. We want{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  fifth">
+                      are committed to providing creative and innovative{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  sixth">
+                      Backend Development, Digital Product Development,{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  seventh">
+                      Server Management, Continuous Integration and{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  eighth">
+                      eCommerce solutions. We are progressively working{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  ninth">
+                      with clients with legacy systems as well as progressive{" "}
+                    </div>
+                    <div className="fs-18 cl-gray2 fw-400 f-kanit  tenth">
+                      technologies includingVR and AR.{" "}
+                    </div>
                   </div>
                 </Col>
                 <Col md={3} sm={12} className="p-40  position-relative">

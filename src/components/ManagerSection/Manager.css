@@ -1,0 +1,317 @@
+.Caraousel-area {
+}
+
+.description-section {
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  max-width: 670px;
+  line-height: 1.5;
+}
+
+.designation {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--gray2);
+}
+
+.carousel-next {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #555;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555 !important;
+}
+
+.carousel-previous {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #555;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555 !important;
+}
+
+.image-gallary {
+}
+
+.laptoppic {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+
+.coughpic {
+  position: absolute;
+  right: 20%;
+  top: 15%;
+}
+
+.calling {
+  position: absolute;
+  bottom: 10%;
+  left: 4%;
+  z-index: 1;
+}
+.bros {
+  position: absolute;
+  bottom: 45%;
+  left: 2%;
+}
+
+.caraousel-section-main {
+  padding-top: 240px !important;
+  padding-bottom: 440px !important;
+}
+
+.mapdisplay {
+  position: absolute;
+  right: 5%;
+  bottom: 40%;
+}
+.map {
+  position: absolute;
+  bottom: 35%;
+  right: 17%;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1310px) {
+  .mapdisplay {
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    height: 25%;
+  }
+
+  .map {
+    position: absolute;
+    bottom: 12%;
+    right: 20%;
+    z-index: 1;
+    height: 10%;
+  }
+
+  .calling {
+    position: absolute;
+    bottom: 5%;
+    left: 4%;
+    z-index: 1;
+    height: 35%;
+  }
+
+  .bros {
+    position: absolute;
+    bottom: 38%;
+    left: 2%;
+    height: 10%;
+  }
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1310px) {
+  .mapdisplay {
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    height: 25%;
+  }
+
+  .map {
+    position: absolute;
+    bottom: 12%;
+    right: 20%;
+    z-index: 1;
+    height: 10%;
+  }
+
+  .calling {
+    position: absolute;
+    bottom: 5%;
+    left: 4%;
+    z-index: 1;
+    height: 35%;
+  }
+
+  .bros {
+    position: absolute;
+    bottom: 38%;
+    left: 2%;
+    height: 10%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1240px) {
+  .mapdisplay {
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    height: 20%;
+  }
+
+  .map {
+    position: absolute;
+    bottom: 15%;
+    right: 21%;
+    z-index: 1;
+    height: 7%;
+  }
+
+  .calling {
+    position: absolute;
+    bottom: 5%;
+    left: 4%;
+    z-index: 1;
+    height: 25%;
+  }
+
+  .bros {
+    position: absolute;
+    bottom: 28%;
+    left: 2%;
+    height: 8%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .mapdisplay {
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    height: 18%;
+  }
+
+  .map {
+    position: absolute;
+    bottom: 15%;
+    right: 23%;
+    z-index: 1;
+    height: 7%;
+  }
+
+  .calling {
+    position: absolute;
+    bottom: 5%;
+    left: 6%;
+    z-index: 1;
+    height: 20%;
+  }
+
+  .bros {
+    position: absolute;
+    bottom: 23%;
+    left: 3%;
+    height: 8%;
+  }
+
+  .laptoppic {
+    position: absolute;
+    left: 12%;
+    top: 10%;
+  }
+
+  .coughpic {
+    position: absolute;
+    right: 12%;
+    top: 15%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .mapdisplay {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    height: 14%;
+  }
+
+  .map {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    z-index: 1;
+    height: 7%;
+  }
+
+  .calling {
+    position: absolute;
+    bottom: 5%;
+    left: 6%;
+    z-index: 1;
+    height: 14%;
+  }
+
+  .bros {
+    position: absolute;
+    bottom: 18%;
+    left: 3%;
+    height: 8%;
+  }
+
+  .laptoppic {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    height: 15%;
+  }
+
+  .coughpic {
+    position: absolute;
+    right: 10%;
+    top: 15%;
+
+    height: 7%;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .mapdisplay {
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    height: 8%;
+  }
+
+  .map {
+    position: absolute;
+    bottom: 18%;
+    right: 25%;
+    z-index: 1;
+    height: 4%;
+  }
+
+  .calling {
+    position: absolute;
+    bottom: 5%;
+    left: 16%;
+    z-index: 1;
+    height: 10%;
+  }
+
+  .bros {
+    position: absolute;
+    bottom: 14%;
+    left: 8%;
+    height: 5%;
+  }
+
+  .laptoppic {
+    position: absolute;
+    left: 12%;
+    top: 10%;
+    height: 8%;
+  }
+
+  .coughpic {
+    position: absolute;
+    right: 10%;
+    top: 12%;
+    height: 5%;
+  }
+}
